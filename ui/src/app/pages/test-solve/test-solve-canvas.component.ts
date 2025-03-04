@@ -19,20 +19,19 @@ import { lastValueFrom } from 'rxjs';
 @Component({
   selector: 'app-test-solve',
   standalone: true,
-  templateUrl: './test-solve.component.html',
-  styleUrls: ['./test-solve.component.scss'],
+  templateUrl: './test-solve-canvas.component.html',
+  styleUrls: ['./test-solve-canvas.component.scss'],
   imports: [  QuestionLiteViewComponent,
       CommonModule, MatToolbarModule, MatButtonModule, MatCardModule, PassageCardComponent,
     SpinWheelComponent
     ] 
 })
-export class TestSolveComponent implements OnInit, AfterViewInit {
+export class TestSolveCanvasComponent implements OnInit, AfterViewInit {
   @ViewChild(SpinWheelComponent) spinWheelComp!: SpinWheelComponent;
   @ViewChild('spinWheelDialog') spinWheelDialog!: TemplateRef<any>; // 📌 Modal Şablonunu Yakala
 
   testInstanceId!: number;
   @Input() testInstance!: TestInstance; // Test bilgisi ve sorular
-  currentQuestionIndex:number = 0; // Şu anki soru index'i
   testDuration: number = 0; // Saniye cinsinden süre
   questionDuration: number = 0; // Soruya ayrılan süre
   interval: any;
@@ -59,7 +58,7 @@ export class TestSolveComponent implements OnInit, AfterViewInit {
   public selectedRegion = signal<QuestionRegion | null>(null); // Kullanıcının seçtiği soru veya şık
 
   public hoveredChoice = signal<AnswerChoice | null>(null); // 🟦 Hangi şık üzerinde geziliyorsa
-  public selectedChoice = signal<AnswerChoice | null>(null); // ✅ Hangi şık seçiliyse
+  public selectedChoices = signal<Map<number, AnswerChoice>>(new Map()); // 🔄 Her soru için seçilen şıkkı sakla
 
   public imageCache = new Map<string, HTMLImageElement>(); // 📂 Resimleri önbellekte sakla
   public currentImageId = signal<string | null>(null); // 🔄 Mevcut resmin ID'sini takip et
@@ -148,18 +147,19 @@ export class TestSolveComponent implements OnInit, AfterViewInit {
 async loadTest(testId: number) {
   try {
     // 📥 Test verisini asenkron olarak al
-    this.testInstance = await lastValueFrom(this.testService.getTestWithAnswers(testId));
+    this.testInstance = await lastValueFrom(this.testService.getCanvasTestWithAnswers(testId));
     console.log('Test loaded', this.testInstance);
 
     // 📥 Soruları yükle ve resimleri bekle
-    await this.loadQuestions();
+    
 
     let lastAnsweredQuestionIndex = this.testInstance.testInstanceQuestions.findIndex(q => q.selectedAnswerId);
     if (lastAnsweredQuestionIndex === -1) {
-      this.currentQuestionIndex = 0;
+      this.currentIndex.set(0);
     }
     if (lastAnsweredQuestionIndex < this.testInstance.testInstanceQuestions.length - 1) {
-      this.currentQuestionIndex = lastAnsweredQuestionIndex + 1;
+      const newIndex = lastAnsweredQuestionIndex + 1;
+      this.currentIndex.set(newIndex);
     }
 
     // 📜 Passage gruplarını oluştur
@@ -185,6 +185,8 @@ async loadTest(testId: number) {
       this.router.navigate(['/student-profile']);
     }
 
+    await this.loadQuestions();
+
     // ⏳ Sayaçları başlat
     this.startTimer();
     this.startQuestionTimer();
@@ -209,7 +211,7 @@ async loadTest(testId: number) {
   }
 
   startQuestionTimer() {
-    this.questionDuration = this.testInstance.testInstanceQuestions[this.currentQuestionIndex].timeTaken || 0;
+    this.questionDuration = this.testInstance.testInstanceQuestions[this.currentIndex()].timeTaken || 0;
     if (this.questionTimerSubscription) {
       this.questionTimerSubscription.unsubscribe(); // Eski timer'ı sıfırla
     }
@@ -245,7 +247,7 @@ async loadTest(testId: number) {
 
   // Cevap kaydet
   selectAnswer(selectedIndex: any) {
-    this.testInstance.testInstanceQuestions[this.currentQuestionIndex].selectedAnswerId = selectedIndex;
+    this.testInstance.testInstanceQuestions[this.currentIndex()].selectedAnswerId = selectedIndex;
   }
 
   createDialogTemplate() {
@@ -263,8 +265,8 @@ async loadTest(testId: number) {
   }
   
   openAnswer(selectedIndex: any) {
-    this.testInstance.testInstanceQuestions[this.currentQuestionIndex].timeTaken = this.questionDuration;
-    this.testInstance.testInstanceQuestions[this.currentQuestionIndex].selectedAnswerId = selectedIndex;
+    this.testInstance.testInstanceQuestions[this.currentIndex()].timeTaken = this.questionDuration;
+    this.testInstance.testInstanceQuestions[this.currentIndex()].selectedAnswerId = selectedIndex;
     this.correctAnswerVisible = true;
     if(this.questionTimerSubscription)
       this.questionTimerSubscription.unsubscribe();
@@ -287,13 +289,13 @@ async loadTest(testId: number) {
 
 
   persistPracticetime() {
-    this.testInstance.testInstanceQuestions[this.currentQuestionIndex].selectedAnswerId = 0;
+    this.testInstance.testInstanceQuestions[this.currentIndex()].selectedAnswerId = 0;
     // durationn süreyi gördüğü anda durdu.
     this.testService.saveAnswer({
-      testQuestionId: this.testInstance.testInstanceQuestions[this.currentQuestionIndex].id,
+      testQuestionId: this.testInstance.testInstanceQuestions[this.currentIndex()].id,
       selectedAnswerId: 0,
       testInstanceId: this.testInstance.id,
-      timeTaken: this.testInstance.testInstanceQuestions[this.currentQuestionIndex].timeTaken
+      timeTaken: this.testInstance.testInstanceQuestions[this.currentIndex()].timeTaken
     }).subscribe({
       next: () => {
         // Cevap kaydedildi, sonraki soruya geç
@@ -306,10 +308,10 @@ async loadTest(testId: number) {
   }
 
   persistAnswer(selectedAnswerId: number) {
-    this.testInstance.testInstanceQuestions[this.currentQuestionIndex].selectedAnswerId = selectedAnswerId;
+    this.testInstance.testInstanceQuestions[this.currentIndex()].selectedAnswerId = selectedAnswerId;
     
     this.testService.saveAnswer({
-      testQuestionId: this.testInstance.testInstanceQuestions[this.currentQuestionIndex].id,
+      testQuestionId: this.testInstance.testInstanceQuestions[this.currentIndex()].id,
       selectedAnswerId: selectedAnswerId,
       testInstanceId: this.testInstance.id,
       timeTaken: this.questionDuration
@@ -327,24 +329,21 @@ async loadTest(testId: number) {
   
   // Önceki soruya git
   prevQuestion() {
-    this.testInstance.testInstanceQuestions[this.currentQuestionIndex].timeTaken = this.questionDuration;
+    this.testInstance.testInstanceQuestions[this.currentIndex()].timeTaken = this.questionDuration;
     this.correctAnswerVisible = false;
     if(this.testInstance.isPracticeTest) {
       this.persistPracticetime();
     }
     else {
-      if(this.testInstance.testInstanceQuestions[this.currentQuestionIndex].selectedAnswerId) {
-        this.persistAnswer(this.testInstance.testInstanceQuestions[this.currentQuestionIndex].selectedAnswerId);      
+      if(this.testInstance.testInstanceQuestions[this.currentIndex()].selectedAnswerId) {
+        this.persistAnswer(this.testInstance.testInstanceQuestions[this.currentIndex()].selectedAnswerId);      
       }
     }
-    if (this.currentQuestionIndex > 0) {
-      this.currentQuestionIndex--;
-      this.startQuestionTimer(); 
-    }
+   
     if (this.currentIndex() > 0) {
       const newIndex = this.currentIndex() - 1;
       this.currentIndex.set(newIndex);
-
+      this.startQuestionTimer(); 
       // 🔄 Yeni soru için resim yükle
       const question = this.regions()[newIndex];
       if (question.imageId !== this.currentImageId()) {
@@ -357,25 +356,22 @@ async loadTest(testId: number) {
 
   // Sonraki soruya git
   nextQuestion() {
-    this.testInstance.testInstanceQuestions[this.currentQuestionIndex].timeTaken = this.questionDuration;
+    this.testInstance.testInstanceQuestions[this.currentIndex()].timeTaken = this.questionDuration;
     this.correctAnswerVisible = false;
     if(this.testInstance.isPracticeTest) {
 
     }
     else {
-      if(this.testInstance.testInstanceQuestions[this.currentQuestionIndex].selectedAnswerId) {
-        this.persistAnswer(this.testInstance.testInstanceQuestions[this.currentQuestionIndex].selectedAnswerId);
+      if(this.testInstance.testInstanceQuestions[this.currentIndex()].selectedAnswerId) {
+        this.persistAnswer(this.testInstance.testInstanceQuestions[this.currentIndex()].selectedAnswerId);
       }
     }    
-    if (this.currentQuestionIndex < this.testInstance.testInstanceQuestions.length - 1) {
-      this.currentQuestionIndex++;
-      this.startQuestionTimer(); 
-    }
+    
 
     if (this.currentIndex() < this.regions().length - 1) {
       const newIndex = this.currentIndex() + 1;
       this.currentIndex.set(newIndex);
-
+      this.startQuestionTimer(); 
       // 🔄 Yeni soru için resim yükle
       const question = this.regions()[newIndex];
       if (question.imageId !== this.currentImageId()) {
@@ -399,13 +395,14 @@ async loadTest(testId: number) {
 
   async loadQuestions() {
     try {
-      const response = await fetch('questions.json'); // 📥 JSON'u yükle
-      const data: QuestionRegion[] = await response.json();
+      // const response = await fetch('questions.json'); // 📥 JSON'u yükle
+      const data: QuestionRegion[] = this.testService.convertTestInstanceToRegions(this.testInstance);
       this.regions.set(data);
   
       // 🔄 İlk sorunun resmini yükle
-      if (data.length > 0) {
-        await this.loadImageForQuestion(data[0].imageId, data[0].imageUrl);        
+      if (data.length > 0 && data.length > this.currentIndex()) {
+
+        await this.loadImageForQuestion(data[this.currentIndex()].imageId, data[this.currentIndex()].imageUrl);        
       }
   
       this.drawImageSection(); // 🎨 UI'yi güncelle
@@ -467,7 +464,7 @@ async loadTest(testId: number) {
   
       // **Seçili ve hover edilen şıkları farklı renklerde göster**
       for (const answer of region.answers) {
-        if (this.selectedChoice() === answer) {
+        if (this.selectedChoices().get(this.regions()[this.currentIndex()].id) === answer) {
           this.ctx.fillStyle = 'rgba(0, 255, 0, 0.4)'; // ✅ Yeşil arka plan (transparan)
         } else if (this.hoveredChoice() === answer) {
           this.ctx.fillStyle = 'rgba(0, 0, 255, 0.3)'; // 🟦 Mavi hover efekti
@@ -533,13 +530,16 @@ async loadTest(testId: number) {
         mouseY >= answer.y - region.y &&
         mouseY <= answer.y - region.y + answer.height
       ) {
-        this.selectedChoice.set(answer);
-        console.log('Seçilen şık:', answer);
+        const updatedChoices = new Map(this.selectedChoices());
+        updatedChoices.set(region.id, answer);
+        this.selectedChoices.set(updatedChoices);
+        //this.selectedChoice.set(answer);
+        this.selectAnswer(answer.id);
         break;
       }
     }
   
-    this.drawImageSection(); // UI'yı güncelle
+    this.drawImageSection(); // UI'yı güncelle       
   }
 
  

@@ -3,6 +3,7 @@ using System;
 using ExamApp.Api.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ExamApp.Api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250303121916_CanvasQuestions")]
+    partial class CanvasQuestions
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -49,11 +52,11 @@ namespace ExamApp.Api.Migrations
                     b.Property<int?>("Width")
                         .HasColumnType("integer");
 
-                    b.Property<double?>("X")
-                        .HasColumnType("double precision");
+                    b.Property<int?>("X")
+                        .HasColumnType("integer");
 
-                    b.Property<double?>("Y")
-                        .HasColumnType("double precision");
+                    b.Property<int?>("Y")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -208,11 +211,11 @@ namespace ExamApp.Api.Migrations
                     b.Property<int?>("Width")
                         .HasColumnType("integer");
 
-                    b.Property<double?>("X")
-                        .HasColumnType("double precision");
+                    b.Property<int?>("X")
+                        .HasColumnType("integer");
 
-                    b.Property<double?>("Y")
-                        .HasColumnType("double precision");
+                    b.Property<int?>("Y")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -275,11 +278,11 @@ namespace ExamApp.Api.Migrations
                     b.Property<int?>("Width")
                         .HasColumnType("integer");
 
-                    b.Property<double?>("X")
-                        .HasColumnType("double precision");
+                    b.Property<int?>("X")
+                        .HasColumnType("integer");
 
-                    b.Property<double?>("Y")
-                        .HasColumnType("double precision");
+                    b.Property<int?>("Y")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
