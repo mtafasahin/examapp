@@ -3,6 +3,7 @@ using System;
 using ExamApp.Api.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ExamApp.Api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250314220208_newSeedForMath3")]
+    partial class newSeedForMath3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1172,12 +1175,6 @@ namespace ExamApp.Api.Migrations
                         },
                         new
                         {
-                            Id = 231,
-                            Name = "Tartma",
-                            TopicId = 212
-                        },
-                        new
-                        {
                             Id = 1,
                             Name = "Harf, Hece, Sözcük 1",
                             TopicId = 1
@@ -2278,13 +2275,6 @@ namespace ExamApp.Api.Migrations
                             Id = 211,
                             GradeId = 3,
                             Name = "Paralarımız",
-                            SubjectId = 2
-                        },
-                        new
-                        {
-                            Id = 212,
-                            GradeId = 3,
-                            Name = "Tartma",
                             SubjectId = 2
                         },
                         new
