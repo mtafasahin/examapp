@@ -3,6 +3,7 @@ using System;
 using ExamApp.Api.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ExamApp.Api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250321093013_SeedDataChanges_7")]
+    partial class SeedDataChanges_7
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -2107,78 +2110,6 @@ namespace ExamApp.Api.Migrations
                             IsDeleted = false,
                             Name = "VERİ TOPLAMA VE DEĞERLENDİRME",
                             SubjectId = 2
-                        },
-                        new
-                        {
-                            Id = 18,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "HARF VE HECE BİLGİSİ",
-                            SubjectId = 1
-                        },
-                        new
-                        {
-                            Id = 19,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "SÖZCÜK BİLGİSİ",
-                            SubjectId = 1
-                        },
-                        new
-                        {
-                            Id = 20,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "CÜMLE BİLGİSİ",
-                            SubjectId = 1
-                        },
-                        new
-                        {
-                            Id = 21,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "SÖZ VARLIĞI",
-                            SubjectId = 1
-                        },
-                        new
-                        {
-                            Id = 22,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "OKUMA ANLAMA",
-                            SubjectId = 1
-                        },
-                        new
-                        {
-                            Id = 23,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "SÖZCÜK TÜRLERİ",
-                            SubjectId = 1
-                        },
-                        new
-                        {
-                            Id = 24,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "NOKTALAMA İŞARETLERİ",
-                            SubjectId = 1
-                        },
-                        new
-                        {
-                            Id = 25,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "YAZIM KURALLARI",
-                            SubjectId = 1
                         });
                 });
 

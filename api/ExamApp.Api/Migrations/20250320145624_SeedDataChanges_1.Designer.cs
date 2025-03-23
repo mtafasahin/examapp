@@ -3,6 +3,7 @@ using System;
 using ExamApp.Api.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ExamApp.Api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250320145624_SeedDataChanges_1")]
+    partial class SeedDataChanges_1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1636,7 +1639,23 @@ namespace ExamApp.Api.Migrations
                             Id = 2,
                             CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsDeleted = false,
-                            Name = "Birer, Onar, Yüzer Ritmik Sayma",
+                            Name = "Birer Ritmik Sayma",
+                            TopicId = 1
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsDeleted = false,
+                            Name = "Onar Ritmik Sayma",
+                            TopicId = 1
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsDeleted = false,
+                            Name = "Yüzer Ritmik Sayma",
                             TopicId = 1
                         },
                         new
@@ -1644,7 +1663,15 @@ namespace ExamApp.Api.Migrations
                             Id = 5,
                             CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsDeleted = false,
-                            Name = "Basamak Adları ve Değerleri",
+                            Name = "Basamak Adları",
+                            TopicId = 1
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsDeleted = false,
+                            Name = "Basamak Değerleri",
                             TopicId = 1
                         },
                         new
@@ -1660,7 +1687,15 @@ namespace ExamApp.Api.Migrations
                             Id = 8,
                             CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsDeleted = false,
-                            Name = "Doğal Sayıları En Yakın Onluğa ve Yüzlüğe Yuvarlama",
+                            Name = "Doğal Sayıları En Yakın Onluğa Yuvarlama",
+                            TopicId = 1
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsDeleted = false,
+                            Name = "Doğal Sayıları En Yakın Yüzlüğe Yuvarlama",
                             TopicId = 1
                         },
                         new
@@ -1668,7 +1703,15 @@ namespace ExamApp.Api.Migrations
                             Id = 10,
                             CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsDeleted = false,
-                            Name = "Doğal Sayıları Sıralama ve Karşılaştırma",
+                            Name = "Doğal Sayıları Karşılaştırma",
+                            TopicId = 1
+                        },
+                        new
+                        {
+                            Id = 11,
+                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsDeleted = false,
+                            Name = "Doğal Sayıları Sıralama",
                             TopicId = 1
                         },
                         new
@@ -1676,7 +1719,31 @@ namespace ExamApp.Api.Migrations
                             Id = 12,
                             CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsDeleted = false,
-                            Name = "Altışar,Yedişer,Sekizer,Dokuzar  Ritmik Sayma",
+                            Name = "Altışar Ritmik Sayma",
+                            TopicId = 1
+                        },
+                        new
+                        {
+                            Id = 13,
+                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsDeleted = false,
+                            Name = "Yedişer Ritmik Sayma",
+                            TopicId = 1
+                        },
+                        new
+                        {
+                            Id = 14,
+                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsDeleted = false,
+                            Name = "Sekizer Ritmik Sayma",
+                            TopicId = 1
+                        },
+                        new
+                        {
+                            Id = 15,
+                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsDeleted = false,
+                            Name = "Dokuzar Ritmik Sayma",
                             TopicId = 1
                         },
                         new
@@ -1697,6 +1764,14 @@ namespace ExamApp.Api.Migrations
                         },
                         new
                         {
+                            Id = 18,
+                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsDeleted = false,
+                            Name = "Toplamı Tek mi Çift mi?",
+                            TopicId = 1
+                        },
+                        new
+                        {
                             Id = 19,
                             CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsDeleted = false,
@@ -1708,7 +1783,15 @@ namespace ExamApp.Api.Migrations
                             Id = 20,
                             CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsDeleted = false,
-                            Name = "Eldeli ve Eldesiz Toplama İşlemi",
+                            Name = "Eldesiz Toplama İşlemi",
+                            TopicId = 2
+                        },
+                        new
+                        {
+                            Id = 21,
+                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsDeleted = false,
+                            Name = "Eldeli Toplama İşlemi",
                             TopicId = 2
                         },
                         new
@@ -1729,10 +1812,26 @@ namespace ExamApp.Api.Migrations
                         },
                         new
                         {
+                            Id = 24,
+                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsDeleted = false,
+                            Name = "Çıkaralım Bulalım",
+                            TopicId = 3
+                        },
+                        new
+                        {
                             Id = 25,
                             CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsDeleted = false,
                             Name = "Onluk ve Yüzlük Bozmadan Çıkarma İşlemi",
+                            TopicId = 3
+                        },
+                        new
+                        {
+                            Id = 26,
+                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsDeleted = false,
+                            Name = "Onluk Bozarak Çıkarma İşlemi",
                             TopicId = 3
                         },
                         new
@@ -1981,204 +2080,6 @@ namespace ExamApp.Api.Migrations
                             IsDeleted = false,
                             Name = "DOĞAL SAYILARLA ÇIKARMA İŞLEMİ",
                             SubjectId = 2
-                        },
-                        new
-                        {
-                            Id = 4,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "DOĞAL SAYILARLA ÇARPMA İŞLEMİ",
-                            SubjectId = 2
-                        },
-                        new
-                        {
-                            Id = 5,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "DOĞAL SAYILARLA BÖLME İŞLEMİ",
-                            SubjectId = 2
-                        },
-                        new
-                        {
-                            Id = 6,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "KESİRLER",
-                            SubjectId = 2
-                        },
-                        new
-                        {
-                            Id = 7,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "ZAMAN ÖLÇME",
-                            SubjectId = 2
-                        },
-                        new
-                        {
-                            Id = 8,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "PARALARIMIZ",
-                            SubjectId = 2
-                        },
-                        new
-                        {
-                            Id = 9,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "TARTMA",
-                            SubjectId = 2
-                        },
-                        new
-                        {
-                            Id = 10,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "GEOMETRİK ŞEKİLLER VE CİSİMLER",
-                            SubjectId = 2
-                        },
-                        new
-                        {
-                            Id = 11,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "GEOMETRİDE TEMEL KAVRAMLAR",
-                            SubjectId = 2
-                        },
-                        new
-                        {
-                            Id = 12,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "UZAMSAL İLİŞKİLER",
-                            SubjectId = 2
-                        },
-                        new
-                        {
-                            Id = 13,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "UZUNLUK ÖLÇME",
-                            SubjectId = 2
-                        },
-                        new
-                        {
-                            Id = 14,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "ÇEVRE ÖLÇME",
-                            SubjectId = 2
-                        },
-                        new
-                        {
-                            Id = 15,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "ALAN ÖLÇME",
-                            SubjectId = 2
-                        },
-                        new
-                        {
-                            Id = 16,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "SIVI ÖLÇME",
-                            SubjectId = 2
-                        },
-                        new
-                        {
-                            Id = 17,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "VERİ TOPLAMA VE DEĞERLENDİRME",
-                            SubjectId = 2
-                        },
-                        new
-                        {
-                            Id = 18,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "HARF VE HECE BİLGİSİ",
-                            SubjectId = 1
-                        },
-                        new
-                        {
-                            Id = 19,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "SÖZCÜK BİLGİSİ",
-                            SubjectId = 1
-                        },
-                        new
-                        {
-                            Id = 20,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "CÜMLE BİLGİSİ",
-                            SubjectId = 1
-                        },
-                        new
-                        {
-                            Id = 21,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "SÖZ VARLIĞI",
-                            SubjectId = 1
-                        },
-                        new
-                        {
-                            Id = 22,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "OKUMA ANLAMA",
-                            SubjectId = 1
-                        },
-                        new
-                        {
-                            Id = 23,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "SÖZCÜK TÜRLERİ",
-                            SubjectId = 1
-                        },
-                        new
-                        {
-                            Id = 24,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "NOKTALAMA İŞARETLERİ",
-                            SubjectId = 1
-                        },
-                        new
-                        {
-                            Id = 25,
-                            CreateTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GradeId = 3,
-                            IsDeleted = false,
-                            Name = "YAZIM KURALLARI",
-                            SubjectId = 1
                         });
                 });
 
