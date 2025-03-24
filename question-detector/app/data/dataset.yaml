@@ -1,0 +1,5 @@
+train: /app/data/images
+val: /app/data/images
+
+nc: 2
+names: ["question","answers"]
