@@ -4,7 +4,7 @@ from PIL import Image
 from tqdm import tqdm
 
 # Girdi ve çıktı yolları
-JSON_PATH = "/app/data/json/questions.json"
+JSON_PATH = "/app/data/json/questionsv2.json"
 IMAGE_DIR = "/app/data/images"     
 LABEL_DIR = "/app/data/labels"
 

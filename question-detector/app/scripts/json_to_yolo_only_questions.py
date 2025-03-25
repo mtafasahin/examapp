@@ -4,7 +4,7 @@ from PIL import Image
 from collections import defaultdict
 
 # 📁 Dosya yolları
-JSON_PATH = "/app/data/json/only-questions.json"
+JSON_PATH = "/app/data/json/questions.json"
 IMAGES_FOLDER = "/app/data/images"
 LABELS_FOLDER = "/app/data/labels"
 

@@ -10,3 +10,23 @@ yolo detect predict model=runs/detect/train/weights/best.pt source=data/images/i
 
 apt update && apt install tree -y
 tree -L 2
+
+
+yolo detect train \
+  model=runs/detect/train/weights/best.pt \
+  data=data/dataset.yaml \
+  epochs=50 \
+  imgsz=640 \
+  batch=4 \
+  name=secondtrain \
+  device=cpu
+
+yolo detect train \
+  model=yolov8n.pt \
+  data=data/dataset.yaml \
+  epochs=50 \
+  imgsz=640 \
+  batch=1 \
+  name=train-only-q \
+  device=cpu
+
