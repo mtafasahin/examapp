@@ -13,12 +13,13 @@ tree -L 2
 
 
 yolo detect train \
-  model=runs/detect/train/weights/best.pt \
+  model=runs/detect/train-only-q/weights/best.pt \
   data=data/dataset.yaml \
   epochs=50 \
   imgsz=640 \
-  batch=4 \
-  name=secondtrain \
+  batch=1 \
+  project=runs/detect \
+  name=train-only-q-v2 \
   device=cpu
 
 yolo detect train \
@@ -30,3 +31,6 @@ yolo detect train \
   name=train-only-q \
   device=cpu
 
+
+for img in *.jpg; do   txt_file="../labels/${img%.jpg}.txt";   if [ ! -f "$txt_file" ]; then     echo "Removing $img (no label)";     rm "$img";   fi; done
+for img in *.png; do   txt_file="../labels/${img%.jpg}.txt";   if [ ! -f "$txt_file" ]; then     echo "Removing $img (no label)";     rm "$img";   fi; done
