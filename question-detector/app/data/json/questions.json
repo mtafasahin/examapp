@@ -8812,5 +8812,95 @@
       "height": 558.0,
       "imageUrl": "../data/images/6e48d33c-ddc0-4878-9959-6f3d79f7f1dc.jpg"
     }
+  },
+  {
+    "question": {
+      "x": 111.0,
+      "y": 103.0,
+      "width": 441.0,
+      "height": 325.0,
+      "imageUrl": "../data/images/e8faf06a-1158-4e1c-be41-b90f00a1d945.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 114.0,
+      "y": 640.0,
+      "width": 436.0,
+      "height": 340.0,
+      "imageUrl": "../data/images/e8faf06a-1158-4e1c-be41-b90f00a1d945.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 114.0,
+      "y": 1215.0,
+      "width": 437.0,
+      "height": 273.0,
+      "imageUrl": "../data/images/e8faf06a-1158-4e1c-be41-b90f00a1d945.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 627.0,
+      "y": 103.0,
+      "width": 447.0,
+      "height": 366.0,
+      "imageUrl": "../data/images/e8faf06a-1158-4e1c-be41-b90f00a1d945.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 628.0,
+      "y": 640.0,
+      "width": 449.0,
+      "height": 452.0,
+      "imageUrl": "../data/images/e8faf06a-1158-4e1c-be41-b90f00a1d945.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 633.4765625,
+      "y": 1258.759765625,
+      "width": 441.0,
+      "height": 236.0,
+      "imageUrl": "../data/images/e8faf06a-1158-4e1c-be41-b90f00a1d945.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 197.978515625,
+      "y": 1332.259765625,
+      "width": 782.0,
+      "height": 120.0,
+      "imageUrl": "../data/images/17e81fc0-3026-4132-8e63-d187a989e729.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 201.978515625,
+      "y": 221.759765625,
+      "width": 826.0,
+      "height": 297.0,
+      "imageUrl": "../data/images/17e81fc0-3026-4132-8e63-d187a989e729.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 195.978515625,
+      "y": 536.009765625,
+      "width": 907.0,
+      "height": 331.0,
+      "imageUrl": "../data/images/17e81fc0-3026-4132-8e63-d187a989e729.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 198.978515625,
+      "y": 898.009765625,
+      "width": 885.0,
+      "height": 393.0,
+      "imageUrl": "../data/images/17e81fc0-3026-4132-8e63-d187a989e729.jpg"
+    }
   }
 ]

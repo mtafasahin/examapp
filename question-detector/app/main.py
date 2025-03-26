@@ -60,7 +60,7 @@ app.add_middleware(
 )
 
 # Modeli yükle (model yolunu değiştir)
-model = YOLO("runs/detect/train-only-q/weights/best.pt")
+model = YOLO("runs/detect/train-only-q-v2/weights/best.pt")
 
 class ImageData(BaseModel):
     image_base64: str
@@ -75,7 +75,7 @@ def predict(data: ImageData):
         # Base64'ten image oluştur
         image_bytes = base64.b64decode(base64_data)
         image = Image.open(io.BytesIO(image_bytes)).convert("RGB")
-
+        logger.info(f"Received image with shape: {image.size}")
         # Predict et
         results = model.predict(
             source=image,
@@ -89,7 +89,7 @@ def predict(data: ImageData):
         result = results[0]
         boxes = result.boxes
         width, height = result.orig_shape[1], result.orig_shape[0]
-
+        logger.info(f"Detected {len(boxes)} objects")
         predictions = []
 
         for box in boxes:

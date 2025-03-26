@@ -11,6 +11,10 @@ yolo detect predict model=runs/detect/train/weights/best.pt source=data/images/i
 apt update && apt install tree -y
 tree -L 2
 
+source venv/bin/activate
+
+uvicorn main:app --host 0.0.0.0 --port 8000
+
 
 yolo detect train \
   model=runs/detect/train-only-q/weights/best.pt \
