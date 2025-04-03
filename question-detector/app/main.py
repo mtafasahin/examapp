@@ -25,8 +25,11 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 IMAGES_DIR = "data/images"
+ANSWERS_DIR = "data/answers"
 QUESTIONS_JSON_PATH = "data/json/questions.json"
+ANSWERS_JSON_PATH = "data/json/answers.json"
 IMAGE_URL_PREFIX = "../data/images"
+CROPS_DIR = Path("data/crops")
 
 # Ensure dirs exist
 os.makedirs(IMAGES_DIR, exist_ok=True)
@@ -60,7 +63,7 @@ app.add_middleware(
 )
 
 # Modeli yükle (model yolunu değiştir)
-model = YOLO("runs/detect/train-only-q-v2/weights/best.pt")
+model = YOLO("runs/detect/train-only-q-v4/weights/best.pt")
 
 class ImageData(BaseModel):
     image_base64: str
@@ -127,10 +130,11 @@ def upload_questions(payload: UploadQuestionsRequest):
         image.save(image_path)
 
         image_url = f"{IMAGE_URL_PREFIX}/{filename}"
-
+        logger.info(f"Image Added : {image_url}")
+        crops = []
         # Yeni question objelerini oluştur
         new_entries = []
-        for q in payload.questions:
+        for idx, q in enumerate(payload.questions):
             entry = {
                 "question": {
                     "x": q.x,
@@ -140,6 +144,20 @@ def upload_questions(payload: UploadQuestionsRequest):
                     "imageUrl": image_url
                 }
             }
+
+            left = q.x
+            upper = q.y
+            right = q.x + q.width
+            lower = q.y + q.height
+
+            crop = image.crop((left, upper, right, lower))
+
+            crop_filename = f"{filename}_q{idx + 1}.jpg"
+            crop_path = CROPS_DIR / crop_filename
+            crop.save(crop_path)
+
+            crops.append(str(crop_path))
+
             new_entries.append(entry)
             logger.info(f"Added question: {entry['question']}")
 
@@ -157,9 +175,66 @@ def upload_questions(payload: UploadQuestionsRequest):
         return {
             "success": True,
             "added": len(new_entries),
-            "imageFile": filename
+            "imageFile": filename,
+            "crops": crops
         }
 
     except Exception as e:
         logger.error(f"Error occurred: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
+    
+
+@app.post("/send-to-fix-for-answers")
+def upload_answers(payload: UploadQuestionsRequest):
+    try:
+        # 👇 Base64 temizleme
+        base64_str = payload.imageData.image_base64
+        if "," in base64_str:
+            base64_str = base64_str.split(",")[1]
+
+        # Görseli decode et ve kaydet
+        image_bytes = base64.b64decode(base64_str)
+        image = Image.open(BytesIO(image_bytes)).convert("RGB")
+
+        filename = f"{uuid.uuid4()}.jpg"
+        image_path = os.path.join(ANSWERS_DIR, filename)
+        image.save(image_path)
+
+        image_url = f"{IMAGE_URL_PREFIX}/{filename}"
+        logger.info(f"Image Added : {image_url}")
+        # Yeni question objelerini oluştur
+        new_entries = []
+        for idx, q in enumerate(payload.questions):
+            entry = {
+                "question": {
+                    "x": q.x,
+                    "y": q.y,
+                    "width": q.width,
+                    "height": q.height,
+                    "imageUrl": image_url
+                }
+            }
+
+            new_entries.append(entry)
+            logger.info(f"Added question: {entry['question']}")
+
+        # Mevcut questions.json dosyasına ekle
+        with open(ANSWERS_JSON_PATH, "r+", encoding="utf-8") as f:
+            current_data = json.load(f)
+            current_data.extend(new_entries)
+            f.seek(0)
+            json.dump(current_data, f, indent=2, ensure_ascii=False)
+            f.truncate()
+
+        logger.info(f"Successfully appended {len(new_entries)} answers to {ANSWERS_JSON_PATH}")
+
+
+        return {
+            "success": True,
+            "added": len(new_entries),
+            "imageFile": filename
+        }
+
+    except Exception as e:
+        logger.error(f"Error occurred: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))    
