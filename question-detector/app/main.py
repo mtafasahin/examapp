@@ -42,11 +42,18 @@ if not os.path.exists(QUESTIONS_JSON_PATH):
 class ImageData(BaseModel):
     image_base64: str
 
+class AnswerBox(BaseModel):
+    x: float
+    y: float
+    width: float
+    height: float
+
 class QuestionBox(BaseModel):
     x: float
     y: float
     width: float
     height: float
+    answers: List[AnswerBox]    
 
 class UploadQuestionsRequest(BaseModel):
     imageData: ImageData
@@ -64,9 +71,66 @@ app.add_middleware(
 
 # Modeli yükle (model yolunu değiştir)
 model = YOLO("runs/detect/train-only-q-v4/weights/best.pt")
+sub_model = YOLO("runs/detect/train-answers/weights/best.pt")  # <--- Alt modelin yolu
+
 
 class ImageData(BaseModel):
     image_base64: str
+
+
+def upload_answers_logic(payload: UploadQuestionsRequest) -> dict:
+    try:
+        # 👇 Base64 temizleme
+        base64_str = payload.imageData.image_base64
+        if "," in base64_str:
+            base64_str = base64_str.split(",")[1]
+
+        # Görseli decode et ve kaydet
+        image_bytes = base64.b64decode(base64_str)
+        image = Image.open(BytesIO(image_bytes)).convert("RGB")
+
+        filename = f"{uuid.uuid4()}.jpg"
+        image_path = os.path.join(ANSWERS_DIR, filename)
+        image.save(image_path)
+
+        image_url = f"{IMAGE_URL_PREFIX}/{filename}"
+        logger.info(f"Image Added : {image_url}")
+        # Yeni question objelerini oluştur
+        new_entries = []
+        for idx, q in enumerate(payload.questions):
+            entry = {
+                "question": {
+                    "x": q.x,
+                    "y": q.y,
+                    "width": q.width,
+                    "height": q.height,
+                    "imageUrl": image_url
+                }
+            }
+
+            new_entries.append(entry)
+            logger.info(f"Added question: {entry['question']}")
+
+        # Mevcut questions.json dosyasına ekle
+        with open(ANSWERS_JSON_PATH, "r+", encoding="utf-8") as f:
+            current_data = json.load(f)
+            current_data.extend(new_entries)
+            f.seek(0)
+            json.dump(current_data, f, indent=2, ensure_ascii=False)
+            f.truncate()
+
+        logger.info(f"Successfully appended {len(new_entries)} answers to {ANSWERS_JSON_PATH}")
+
+
+        return {
+            "success": True,
+            "added": len(new_entries),
+            "imageFile": filename
+        }
+
+    except Exception as e:
+        logger.error(f"Error occurred: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))  
 
 @app.post("/predict")
 def predict(data: ImageData):
@@ -99,13 +163,45 @@ def predict(data: ImageData):
             x1, y1, x2, y2 = box.xyxy[0].tolist()
             class_id = int(box.cls[0].item())
 
-            predictions.append({
+            prediction_data = {
                 "class_id": class_id,
                 "x": int(x1),
                 "y": int(y1),
                 "width": int(x2 - x1),
                 "height": int(y2 - y1),
-            })
+            }
+
+            # Eğer class_id == 0 ise crop edip sub prediction al
+            if class_id == 0:
+                cropped = image.crop((x1, y1, x2, y2))
+                sub_results = sub_model.predict(
+                    source=cropped,
+                    conf=0.25,
+                    save=False,
+                    save_txt=False,
+                    save_crop=False,
+                    verbose=False
+                )
+                sub_result = sub_results[0]
+                sub_boxes = sub_result.boxes
+
+                subpredictions = []
+                for sbox in sub_boxes:
+                    sx1, sy1, sx2, sy2 = sbox.xyxy[0].tolist()
+                    sclass_id = int(sbox.cls[0].item())
+
+                    # Alt kutuların koordinatlarını ana resme göre ayarla
+                    subpredictions.append({
+                        "class_id": sclass_id,
+                        "x": int(sx1 + x1),
+                        "y": int(sy1 + y1),
+                        "width": int(sx2 - sx1),
+                        "height": int(sy2 - sy1),
+                    })
+
+                prediction_data["subpredictions"] = subpredictions
+
+            predictions.append(prediction_data)
 
         return {"success": True, "predictions": predictions}
 
@@ -158,6 +254,27 @@ def upload_questions(payload: UploadQuestionsRequest):
 
             crops.append(str(crop_path))
 
+            # Eğer answer varsa: crop edilmiş görüntüyle birlikte yeni payload oluştur ve gönder
+            if q.answers:
+                # Crop image to base64
+                with BytesIO() as buffer:
+                    crop.save(buffer, format="JPEG")
+                    crop_base64 = base64.b64encode(buffer.getvalue()).decode()
+
+                # AnswerBox -> QuestionBox çevir
+                converted_questions = [
+                    QuestionBox(x=a.x - q.x, y=a.y - q.y, width=a.width, height=a.height, answers=[])
+                    for a in q.answers
+                ]
+                base64_with_prefix = f"data:image/webp;base64,{crop_base64}"
+                new_payload = UploadQuestionsRequest(   
+                    imageData={"image_base64":base64_with_prefix},
+                    questions=converted_questions
+                )
+
+                result = upload_answers_logic(new_payload)
+                logger.info(f"Sub-answers added: {result}")
+
             new_entries.append(entry)
             logger.info(f"Added question: {entry['question']}")
 
@@ -186,55 +303,4 @@ def upload_questions(payload: UploadQuestionsRequest):
 
 @app.post("/send-to-fix-for-answers")
 def upload_answers(payload: UploadQuestionsRequest):
-    try:
-        # 👇 Base64 temizleme
-        base64_str = payload.imageData.image_base64
-        if "," in base64_str:
-            base64_str = base64_str.split(",")[1]
-
-        # Görseli decode et ve kaydet
-        image_bytes = base64.b64decode(base64_str)
-        image = Image.open(BytesIO(image_bytes)).convert("RGB")
-
-        filename = f"{uuid.uuid4()}.jpg"
-        image_path = os.path.join(ANSWERS_DIR, filename)
-        image.save(image_path)
-
-        image_url = f"{IMAGE_URL_PREFIX}/{filename}"
-        logger.info(f"Image Added : {image_url}")
-        # Yeni question objelerini oluştur
-        new_entries = []
-        for idx, q in enumerate(payload.questions):
-            entry = {
-                "question": {
-                    "x": q.x,
-                    "y": q.y,
-                    "width": q.width,
-                    "height": q.height,
-                    "imageUrl": image_url
-                }
-            }
-
-            new_entries.append(entry)
-            logger.info(f"Added question: {entry['question']}")
-
-        # Mevcut questions.json dosyasına ekle
-        with open(ANSWERS_JSON_PATH, "r+", encoding="utf-8") as f:
-            current_data = json.load(f)
-            current_data.extend(new_entries)
-            f.seek(0)
-            json.dump(current_data, f, indent=2, ensure_ascii=False)
-            f.truncate()
-
-        logger.info(f"Successfully appended {len(new_entries)} answers to {ANSWERS_JSON_PATH}")
-
-
-        return {
-            "success": True,
-            "added": len(new_entries),
-            "imageFile": filename
-        }
-
-    except Exception as e:
-        logger.error(f"Error occurred: {str(e)}")
-        raise HTTPException(status_code=500, detail=str(e))    
+    return upload_answers_logic(payload)
