@@ -52,3 +52,7 @@ for img in *.jpg; do   txt_file="../labels/${img%.jpg}.txt";   if [ ! -f "$txt_f
 for img in *.png; do   txt_file="../labels/${img%.jpg}.txt";   if [ ! -f "$txt_file" ]; then     echo "Removing $img (no label)";     rm "$img";   fi; done
 
 yolo detect train data=data/dataset.yaml model=yolov8n.pt epochs=50 imgsz=640 batch=1 name=train-answers device=cpu
+
+apt-get update
+apt-get install libzbar0 
+

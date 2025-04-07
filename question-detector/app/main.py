@@ -12,7 +12,7 @@ import uuid
 import json
 import os
 import logging
-
+from pyzbar.pyzbar import decode
 app = FastAPI()
 
 
@@ -146,7 +146,7 @@ def predict(data: ImageData):
         # Predict et
         results = model.predict(
             source=image,
-            conf=0.25,
+            conf=0.2,
             save=False,
             save_txt=False,
             save_crop=False,
@@ -176,7 +176,7 @@ def predict(data: ImageData):
                 cropped = image.crop((x1, y1, x2, y2))
                 sub_results = sub_model.predict(
                     source=cropped,
-                    conf=0.25,
+                    conf=0.2,
                     save=False,
                     save_txt=False,
                     save_crop=False,
@@ -304,3 +304,31 @@ def upload_questions(payload: UploadQuestionsRequest):
 @app.post("/send-to-fix-for-answers")
 def upload_answers(payload: UploadQuestionsRequest):
     return upload_answers_logic(payload)
+
+
+@app.post("/read-qr")
+async def read_qr_code(request: ImageData):
+    try:
+        base64_data = request.image_base64
+        if base64_data.startswith("data:"):
+            base64_data = base64_data.split(",", 1)[1]
+        # Base64'ten image oluştur
+        image_bytes = base64.b64decode(base64_data)
+        image = Image.open(io.BytesIO(image_bytes)).convert("RGB")
+
+        # Base64 decode
+        # image_data = base64.b64decode(request.image_base64)
+        # image = Image.open(BytesIO(image_data))
+
+        # QR kodları çöz
+        qr_codes = decode(image)
+
+        if not qr_codes:
+            raise HTTPException(status_code=404, detail="QR kod bulunamadı.")
+
+        # İlk QR kodun verisini döndür
+        qr_data = qr_codes[0].data.decode('utf-8')
+        return {"qr_data": qr_data}
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Hata oluştu: {str(e)}")
