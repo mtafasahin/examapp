@@ -5,8 +5,8 @@ from collections import defaultdict
 
 # 📁 Dosya yolları
 JSON_PATH = "/app/data/json/answers.json"
-IMAGES_FOLDER = "/app/data/images"
-LABELS_FOLDER = "/app/data/labels"
+IMAGES_FOLDER = "/app/data/answers/images"
+LABELS_FOLDER = "/app/data/answers/labels"
 
 # 📁 Çıktı klasörünü oluştur
 os.makedirs(LABELS_FOLDER, exist_ok=True)

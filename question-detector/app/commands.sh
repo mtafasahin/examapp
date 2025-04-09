@@ -38,14 +38,26 @@ yolo detect train \
 source venv/bin/activate
 
 yolo detect train \
-  model=runs/detect/train-only-q-v3/weights/best.pt \
+  model=runs/detect/train-only-q-v4/weights/best.pt \
   data=data/dataset.yaml \
   epochs=50 \
   imgsz=640 \
   batch=1 \
   project=runs/detect \
-  name=train-only-q-v4 \
+  name=train-only-q-v5 \
   device=cpu
+
+
+yolo detect train \
+  model=runs/detect/train-answers/weights/best.pt \
+  data=data/dataset-answers.yaml \
+  epochs=50 \
+  imgsz=640 \
+  batch=1 \
+  project=runs/detect \
+  name=train-answers-v2 \
+  device=cpu
+
 
 
 for img in *.jpg; do   txt_file="../labels/${img%.jpg}.txt";   if [ ! -f "$txt_file" ]; then     echo "Removing $img (no label)";     rm "$img";   fi; done

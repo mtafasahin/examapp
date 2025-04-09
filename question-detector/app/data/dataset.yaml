@@ -1,4 +1,4 @@
-path: /Users/mustafasahin/workspace/examapp/question-detector/app/data
+path: /Users/mustafasahin/workspace/examapp/question-detector/app/data/questions
 train: images
 val: images
 

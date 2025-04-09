@@ -24,11 +24,12 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-IMAGES_DIR = "data/images"
-ANSWERS_DIR = "data/answers"
+IMAGES_DIR = "data/questions/images"
+ANSWERS_DIR = "data/answers/images"
 QUESTIONS_JSON_PATH = "data/json/questions.json"
 ANSWERS_JSON_PATH = "data/json/answers.json"
-IMAGE_URL_PREFIX = "../data/images"
+QUESTION_IMAGE_URL_PREFIX = "../data/questions/images"
+ANSWER_IMAGE_URL_PREFIX = "../data/answers/images"
 CROPS_DIR = Path("data/crops")
 
 # Ensure dirs exist
@@ -70,8 +71,8 @@ app.add_middleware(
 )
 
 # Modeli yükle (model yolunu değiştir)
-model = YOLO("runs/detect/train-only-q-v4/weights/best.pt")
-sub_model = YOLO("runs/detect/train-answers/weights/best.pt")  # <--- Alt modelin yolu
+model = YOLO("runs/detect/train-only-q-v5/weights/best.pt")
+sub_model = YOLO("runs/detect/train-answers-v2/weights/best.pt")  # <--- Alt modelin yolu
 
 
 class ImageData(BaseModel):
@@ -93,7 +94,7 @@ def upload_answers_logic(payload: UploadQuestionsRequest) -> dict:
         image_path = os.path.join(ANSWERS_DIR, filename)
         image.save(image_path)
 
-        image_url = f"{IMAGE_URL_PREFIX}/{filename}"
+        image_url = f"{ANSWER_IMAGE_URL_PREFIX}/{filename}"
         logger.info(f"Image Added : {image_url}")
         # Yeni question objelerini oluştur
         new_entries = []
@@ -146,7 +147,7 @@ def predict(data: ImageData):
         # Predict et
         results = model.predict(
             source=image,
-            conf=0.2,
+            conf=0.25,
             save=False,
             save_txt=False,
             save_crop=False,
@@ -176,7 +177,7 @@ def predict(data: ImageData):
                 cropped = image.crop((x1, y1, x2, y2))
                 sub_results = sub_model.predict(
                     source=cropped,
-                    conf=0.2,
+                    conf=0.25,
                     save=False,
                     save_txt=False,
                     save_crop=False,
@@ -225,7 +226,7 @@ def upload_questions(payload: UploadQuestionsRequest):
         image_path = os.path.join(IMAGES_DIR, filename)
         image.save(image_path)
 
-        image_url = f"{IMAGE_URL_PREFIX}/{filename}"
+        image_url = f"{QUESTION_IMAGE_URL_PREFIX}/{filename}"
         logger.info(f"Image Added : {image_url}")
         crops = []
         # Yeni question objelerini oluştur
