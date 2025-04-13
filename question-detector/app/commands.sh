@@ -47,6 +47,16 @@ yolo detect train \
   name=train-only-q-v5 \
   device=cpu
 
+  yolo detect train \
+  model=runs/detect/train-only-q-v5/weights/best.pt \
+  data=data/dataset.yaml \
+  epochs=50 \
+  imgsz=640 \
+  batch=1 \
+  project=runs/detect \
+  name=train-only-q-v6 \
+  device=cpu
+
 
 yolo detect train \
   model=runs/detect/train-answers/weights/best.pt \
@@ -59,9 +69,23 @@ yolo detect train \
   device=cpu
 
 
+yolo detect train \
+  model=runs/detect/train-answers-v2/weights/best.pt \
+  data=data/dataset-answers.yaml \
+  epochs=25 \
+  imgsz=640 \
+  batch=2 \
+  project=runs/detect \
+  name=train-answers-v3 \
+  device=cpu
+
 
 for img in *.jpg; do   txt_file="../labels/${img%.jpg}.txt";   if [ ! -f "$txt_file" ]; then     echo "Removing $img (no label)";     rm "$img";   fi; done
 for img in *.png; do   txt_file="../labels/${img%.jpg}.txt";   if [ ! -f "$txt_file" ]; then     echo "Removing $img (no label)";     rm "$img";   fi; done
+
+
+for img in *.png; do   txt_file="../labels/${img%.jpg}.txt";   if [ ! -f "$txt_file" ]; then     echo "Removing $img (no label)";   fi; done
+for img in *.jpg; do   txt_file="../labels/${img%.jpg}.txt";   if [ ! -f "$txt_file" ]; then     echo "Removing $img (no label)";   fi; done
 
 yolo detect train data=data/dataset.yaml model=yolov8n.pt epochs=50 imgsz=640 batch=1 name=train-answers device=cpu
 
