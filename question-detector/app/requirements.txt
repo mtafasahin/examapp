@@ -8,3 +8,4 @@ pillow
 ultralytics
 python-multipart
 pyzbar
+pytesseract
