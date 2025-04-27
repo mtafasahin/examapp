@@ -43012,5 +43012,176 @@
       "height": 319.0,
       "imageUrl": "../data/questions/images/858c990f-f7f6-4844-85a0-e9a536ca74b8.jpg"
     }
+  },
+  {
+    "question": {
+      "x": 182.0,
+      "y": 124.0,
+      "width": 1037.0,
+      "height": 407.0,
+      "imageUrl": "../data/questions/images/2c8d9c1a-b602-40c9-b3d6-3a86bef03f5f.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 204.0,
+      "y": 576.0,
+      "width": 1008.0,
+      "height": 565.0,
+      "imageUrl": "../data/questions/images/2c8d9c1a-b602-40c9-b3d6-3a86bef03f5f.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 182.0,
+      "y": 1182.0,
+      "width": 921.0,
+      "height": 532.0,
+      "imageUrl": "../data/questions/images/2c8d9c1a-b602-40c9-b3d6-3a86bef03f5f.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 127.0,
+      "y": 176.0,
+      "width": 440.0,
+      "height": 410.0,
+      "imageUrl": "../data/questions/images/61cd6c95-675b-4dc0-9aa2-e27a2581532a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 132.0,
+      "y": 666.0,
+      "width": 434.0,
+      "height": 215.0,
+      "imageUrl": "../data/questions/images/61cd6c95-675b-4dc0-9aa2-e27a2581532a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 128.0,
+      "y": 969.0,
+      "width": 442.0,
+      "height": 526.0,
+      "imageUrl": "../data/questions/images/61cd6c95-675b-4dc0-9aa2-e27a2581532a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 645.0,
+      "y": 165.0,
+      "width": 442.0,
+      "height": 293.0,
+      "imageUrl": "../data/questions/images/61cd6c95-675b-4dc0-9aa2-e27a2581532a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 645.0,
+      "y": 487.0,
+      "width": 444.0,
+      "height": 488.0,
+      "imageUrl": "../data/questions/images/61cd6c95-675b-4dc0-9aa2-e27a2581532a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 645.0,
+      "y": 1021.0,
+      "width": 445.0,
+      "height": 469.0,
+      "imageUrl": "../data/questions/images/61cd6c95-675b-4dc0-9aa2-e27a2581532a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 93.0,
+      "y": 103.0,
+      "width": 439.0,
+      "height": 379.0,
+      "imageUrl": "../data/questions/images/61cd6c95-675b-4dc0-9aa2-e27a2581532a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 92.0,
+      "y": 611.0,
+      "width": 442.0,
+      "height": 356.0,
+      "imageUrl": "../data/questions/images/61cd6c95-675b-4dc0-9aa2-e27a2581532a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 94.0,
+      "y": 1129.0,
+      "width": 441.0,
+      "height": 364.0,
+      "imageUrl": "../data/questions/images/61cd6c95-675b-4dc0-9aa2-e27a2581532a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 609.0,
+      "y": 106.0,
+      "width": 443.0,
+      "height": 339.0,
+      "imageUrl": "../data/questions/images/61cd6c95-675b-4dc0-9aa2-e27a2581532a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 606.0,
+      "y": 480.0,
+      "width": 453.0,
+      "height": 551.0,
+      "imageUrl": "../data/questions/images/61cd6c95-675b-4dc0-9aa2-e27a2581532a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 612.0,
+      "y": 1070.0,
+      "width": 445.0,
+      "height": 434.0,
+      "imageUrl": "../data/questions/images/61cd6c95-675b-4dc0-9aa2-e27a2581532a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 180.0,
+      "y": 124.0,
+      "width": 1044.0,
+      "height": 293.0,
+      "imageUrl": "../data/questions/images/f4c95d19-3e3c-4a55-abc4-74e4a57c40e7.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 181.0,
+      "y": 440.0,
+      "width": 1043.0,
+      "height": 685.0,
+      "imageUrl": "../data/questions/images/f4c95d19-3e3c-4a55-abc4-74e4a57c40e7.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 185.0,
+      "y": 1148.0,
+      "width": 1025.0,
+      "height": 334.0,
+      "imageUrl": "../data/questions/images/f4c95d19-3e3c-4a55-abc4-74e4a57c40e7.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 198.0,
+      "y": 1530.0,
+      "width": 1015.0,
+      "height": 209.0,
+      "imageUrl": "../data/questions/images/f4c95d19-3e3c-4a55-abc4-74e4a57c40e7.jpg"
+    }
   }
 ]
