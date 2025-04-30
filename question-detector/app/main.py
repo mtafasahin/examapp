@@ -74,7 +74,7 @@ app.add_middleware(
 # model = YOLO("runs/detect/train-only-q-v5/weights/best.pt")
 model = YOLO("runs/detect/train2/weights/best.pt")
 sub_model = YOLO("runs/detect/train-answers-v2/weights/best.pt")  # <--- Alt modelin yolu
- 
+
 
 class ImageData(BaseModel):
     image_base64: str
