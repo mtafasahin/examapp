@@ -74,9 +74,7 @@ app.add_middleware(
 # model = YOLO("runs/detect/train-only-q-v5/weights/best.pt")
 model = YOLO("runs/detect/train2/weights/best.pt")
 sub_model = YOLO("runs/detect/train-answers-v2/weights/best.pt")  # <--- Alt modelin yolu
-# !yolo detect train data=/content/drive/MyDrive/examapp/train/data/dataset-answers.yaml model=yolov8n.pt epochs=50 imgsz=640
-# !yolo detect train data=/content/drive/MyDrive/examapp/train/data/dataset-answers.yaml model=yolov8n.pt epochs=50 imgsz=640 save_period=1 name=train-answers-v1 project=/content/drive/MyDrive/examapp/train/data/answers/runs
-# !yolo detect train data=dataset.yaml model=runs/detect/train/weights/epoch23.pt epochs=50 imgsz=640 resume=True
+
 
 class ImageData(BaseModel):
     image_base64: str
