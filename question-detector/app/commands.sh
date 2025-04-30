@@ -92,3 +92,5 @@ yolo detect train data=data/dataset.yaml model=yolov8n.pt epochs=50 imgsz=640 ba
 apt-get update
 apt-get install libzbar0 
 
+
+!yolo detect train data=/content/drive/Othercomputers/PersonalMacBookPro/app/data/dataset-answers.yaml cache=True model=/content/drive/Othercomputers/PersonalMacBookPro/app/runs/detect/train-answers-v2/weights/best.pt epochs=50 imgsz=640 name=train-answers-v4 project=/content/drive/Othercomputers/PersonalMacBookPro/app/data/answers/runs

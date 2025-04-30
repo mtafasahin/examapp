@@ -4,9 +4,9 @@ from PIL import Image
 from collections import defaultdict
 
 # 📁 Dosya yolları
-JSON_PATH = "/app/data/json/questions.json"
-IMAGES_FOLDER = "/app/data/questions/images"
-LABELS_FOLDER = "/app/data/questions/labels"
+JSON_PATH = "/content/drive/Othercomputers/PersonalMacBookPro/app/data/json/questions.json"
+IMAGES_FOLDER = "/content/drive/Othercomputers/PersonalMacBookPro/app/data/questions/images"
+LABELS_FOLDER = "/content/drive/Othercomputers/PersonalMacBookPro/app/data/questions/labels"
 
 # 📁 Çıktı klasörünü oluştur
 os.makedirs(LABELS_FOLDER, exist_ok=True)
@@ -56,4 +56,12 @@ for image_name, questions in grouped.items():
     print(f"✅ {image_name} için {len(label_lines)} adet kutu yazıldı.")
 
 print("🎉 Tüm YOLO etiketleri başarıyla oluşturuldu!")
-print(f"📦 Toplam {len(grouped)} görsel bulundu.")
+print(f"📦 Toplam {len(grouped)} görsel bulundu.")  
+
+
+# !yolo detect train data=/content/examapp/train/data/dataset-answers.yaml model=/content/examapp/train/data/answers/runs/train-answers-v1/weights/epoch2.pt epochs=50 imgsz=640 resume=True name=train-answers-v1 project=/content/drive/MyDrive/examapp/train/data/answers/runs
+
+
+
+
+#!yolo detect train data=/content/examapp/train/data/dataset-answers.yaml model=/content/examapp/train/data/answers/runs/train-answers-v1/weights/epoch2.pt epochs=50 imgsz=640 resume=True name=train-answers-v1 project=/content/drive/MyDrive/examapp/train/data/answers/runs
