@@ -57,6 +57,7 @@ class QuestionBox(BaseModel):
     answers: List[AnswerBox]    
 
 class UploadQuestionsRequest(BaseModel):
+    answerCount: int
     imageData: ImageData
     questions: List[QuestionBox]
 
@@ -72,8 +73,11 @@ app.add_middleware(
 
 # Modeli yükle (model yolunu değiştir)
 # model = YOLO("runs/detect/train-only-q-v5/weights/best.pt")
-model = YOLO("runs/detect/train2/weights/best.pt")
-sub_model = YOLO("runs/detect/train-answers-v2/weights/best.pt")  # <--- Alt modelin yolu
+# model = YOLO("runs/detect/train2/weights/best.pt")
+# model = YOLO("data/questions/runs/train32/weights/best.pt")
+# sub_model = YOLO("data/answers/runs/train-answers-v4/weights/best.pt")  # <--- Alt modelin yolu
+model = YOLO("data/questions/runs/train4/weights/best.pt")
+sub_model = YOLO("data/answers/runs/train-answers-v6/weights/best.pt")  # <--- Alt modelin yolu
 
 
 class ImageData(BaseModel):
@@ -214,6 +218,13 @@ def predict(data: ImageData):
 @app.post("/send-to-fix")
 def upload_questions(payload: UploadQuestionsRequest):
     try:
+        # ❗️Ön kontrol: answerCount ile eşleşmeyen var mı?
+        invalid_questions = [q for q in payload.questions if len(q.answers) != payload.answerCount]
+        if invalid_questions:
+            raise HTTPException(
+                status_code=400,
+                detail=f"{len(invalid_questions)} question(s) have answer count mismatch. Expected {payload.answerCount}."
+            )
         # 👇 Base64 temizleme
         base64_str = payload.imageData.image_base64
         if "," in base64_str:
@@ -267,11 +278,13 @@ def upload_questions(payload: UploadQuestionsRequest):
                 converted_questions = [
                     QuestionBox(x=a.x - q.x, y=a.y - q.y, width=a.width, height=a.height, answers=[])
                     for a in q.answers
-                ]
+                ]                
+
                 base64_with_prefix = f"data:image/webp;base64,{crop_base64}"
                 new_payload = UploadQuestionsRequest(   
                     imageData={"image_base64":base64_with_prefix},
-                    questions=converted_questions
+                    questions=converted_questions,
+                    answerCount=payload.answerCount
                 )
 
                 result = upload_answers_logic(new_payload)
