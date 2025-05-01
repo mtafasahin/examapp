@@ -94,3 +94,4 @@ apt-get install libzbar0
 
 
 !yolo detect train data=/content/drive/Othercomputers/PersonalMacBookPro/app/data/dataset-answers.yaml cache=True model=/content/drive/Othercomputers/PersonalMacBookPro/app/runs/detect/train-answers-v2/weights/best.pt epochs=50 imgsz=640 name=train-answers-v4 project=/content/drive/Othercomputers/PersonalMacBookPro/app/data/answers/runs
+!yolo detect train data=/content/drive/Othercomputers/PersonalMacBookPro/app/data/dataset.yaml cache=True model=/content/drive/Othercomputers/PersonalMacBookPro/app/runs/detect/train2/weights/best.pt epochs=50 imgsz=640 name=train3 project=/content/drive/Othercomputers/PersonalMacBookPro/app/data/questions/runs
