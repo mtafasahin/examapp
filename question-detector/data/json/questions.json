@@ -14245,5 +14245,95 @@
       "height": 517.0,
       "imageUrl": "../data/questions/images/b5e27cfc-ead5-481b-b437-eeb9fe22119f.jpg"
     }
+  },
+  {
+    "question": {
+      "x": 228.0,
+      "y": 251.0,
+      "width": 1262.0,
+      "height": 310.0,
+      "imageUrl": "../data/questions/images/100c1a8d-7982-4140-a1c4-e0e03bb6bea4.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 231.0,
+      "y": 655.0,
+      "width": 1251.0,
+      "height": 525.0,
+      "imageUrl": "../data/questions/images/100c1a8d-7982-4140-a1c4-e0e03bb6bea4.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 229.0,
+      "y": 1276.0,
+      "width": 1246.0,
+      "height": 319.0,
+      "imageUrl": "../data/questions/images/100c1a8d-7982-4140-a1c4-e0e03bb6bea4.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 242.0,
+      "y": 1690.0,
+      "width": 984.0,
+      "height": 148.0,
+      "imageUrl": "../data/questions/images/100c1a8d-7982-4140-a1c4-e0e03bb6bea4.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 236.0,
+      "y": 1920.0,
+      "width": 1065.0,
+      "height": 180.0,
+      "imageUrl": "../data/questions/images/100c1a8d-7982-4140-a1c4-e0e03bb6bea4.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 228.0,
+      "y": 251.0,
+      "width": 1262.0,
+      "height": 310.0,
+      "imageUrl": "../data/questions/images/e6ebb7ba-8e95-4dee-b131-56896e1ccfb3.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 231.0,
+      "y": 655.0,
+      "width": 1251.0,
+      "height": 525.0,
+      "imageUrl": "../data/questions/images/e6ebb7ba-8e95-4dee-b131-56896e1ccfb3.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 229.0,
+      "y": 1276.0,
+      "width": 1246.0,
+      "height": 319.0,
+      "imageUrl": "../data/questions/images/e6ebb7ba-8e95-4dee-b131-56896e1ccfb3.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 242.0,
+      "y": 1690.0,
+      "width": 984.0,
+      "height": 148.0,
+      "imageUrl": "../data/questions/images/e6ebb7ba-8e95-4dee-b131-56896e1ccfb3.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 236.0,
+      "y": 1920.0,
+      "width": 1065.0,
+      "height": 180.0,
+      "imageUrl": "../data/questions/images/e6ebb7ba-8e95-4dee-b131-56896e1ccfb3.jpg"
+    }
   }
 ]
