@@ -121426,5 +121426,2453 @@
       "height": 48.0,
       "imageUrl": "../data/answers/images/b80421b5-2c81-44c6-b2c9-ac5660aaa5f8.jpg"
     }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 120.0,
+      "width": 233.0,
+      "height": 36.0,
+      "imageUrl": "../data/answers/images/aaf8152b-d91b-4fa3-b2ca-be86b4c0e66c.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 162.0,
+      "width": 233.0,
+      "height": 34.0,
+      "imageUrl": "../data/answers/images/aaf8152b-d91b-4fa3-b2ca-be86b4c0e66c.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 200.0,
+      "width": 233.0,
+      "height": 34.0,
+      "imageUrl": "../data/answers/images/aaf8152b-d91b-4fa3-b2ca-be86b4c0e66c.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 239.0,
+      "width": 233.0,
+      "height": 40.0,
+      "imageUrl": "../data/answers/images/aaf8152b-d91b-4fa3-b2ca-be86b4c0e66c.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 2.0,
+      "y": 85.0,
+      "width": 513.0,
+      "height": 67.0,
+      "imageUrl": "../data/answers/images/f2a5fa42-021c-44f9-8c0a-839876ee09dc.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 2.0,
+      "y": 158.0,
+      "width": 513.0,
+      "height": 65.0,
+      "imageUrl": "../data/answers/images/f2a5fa42-021c-44f9-8c0a-839876ee09dc.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 2.0,
+      "y": 227.0,
+      "width": 513.0,
+      "height": 68.0,
+      "imageUrl": "../data/answers/images/f2a5fa42-021c-44f9-8c0a-839876ee09dc.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 2.0,
+      "y": 302.0,
+      "width": 513.0,
+      "height": 68.0,
+      "imageUrl": "../data/answers/images/f2a5fa42-021c-44f9-8c0a-839876ee09dc.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1.0,
+      "y": 537.0,
+      "width": 513.0,
+      "height": 64.0,
+      "imageUrl": "../data/answers/images/e084c72e-ba50-4635-bdfe-699376d3c090.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1.0,
+      "y": 608.0,
+      "width": 513.0,
+      "height": 96.0,
+      "imageUrl": "../data/answers/images/e084c72e-ba50-4635-bdfe-699376d3c090.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1.0,
+      "y": 713.0,
+      "width": 513.0,
+      "height": 65.0,
+      "imageUrl": "../data/answers/images/e084c72e-ba50-4635-bdfe-699376d3c090.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1.0,
+      "y": 785.0,
+      "width": 513.0,
+      "height": 83.0,
+      "imageUrl": "../data/answers/images/e084c72e-ba50-4635-bdfe-699376d3c090.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 97.0,
+      "width": 506.0,
+      "height": 31.0,
+      "imageUrl": "../data/answers/images/c22ef753-fa10-4129-b7d1-87fa957b8b46.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 133.0,
+      "width": 506.0,
+      "height": 32.0,
+      "imageUrl": "../data/answers/images/c22ef753-fa10-4129-b7d1-87fa957b8b46.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 172.0,
+      "width": 506.0,
+      "height": 37.0,
+      "imageUrl": "../data/answers/images/c22ef753-fa10-4129-b7d1-87fa957b8b46.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 213.0,
+      "width": 506.0,
+      "height": 62.0,
+      "imageUrl": "../data/answers/images/c22ef753-fa10-4129-b7d1-87fa957b8b46.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 93.0,
+      "width": 512.0,
+      "height": 35.0,
+      "imageUrl": "../data/answers/images/bd83e0f1-73f0-42b6-810f-cec92617210b.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 131.0,
+      "width": 512.0,
+      "height": 57.0,
+      "imageUrl": "../data/answers/images/bd83e0f1-73f0-42b6-810f-cec92617210b.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 197.0,
+      "width": 512.0,
+      "height": 72.0,
+      "imageUrl": "../data/answers/images/bd83e0f1-73f0-42b6-810f-cec92617210b.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 275.0,
+      "width": 512.0,
+      "height": 69.0,
+      "imageUrl": "../data/answers/images/bd83e0f1-73f0-42b6-810f-cec92617210b.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 98.0,
+      "width": 511.0,
+      "height": 64.0,
+      "imageUrl": "../data/answers/images/557cda24-6a17-4841-b04b-6265d1e415cc.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 169.0,
+      "width": 511.0,
+      "height": 63.0,
+      "imageUrl": "../data/answers/images/557cda24-6a17-4841-b04b-6265d1e415cc.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 239.0,
+      "width": 511.0,
+      "height": 32.0,
+      "imageUrl": "../data/answers/images/557cda24-6a17-4841-b04b-6265d1e415cc.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 279.0,
+      "width": 511.0,
+      "height": 70.0,
+      "imageUrl": "../data/answers/images/557cda24-6a17-4841-b04b-6265d1e415cc.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 8.0,
+      "y": 947.0,
+      "width": 86.0,
+      "height": 50.0,
+      "imageUrl": "../data/answers/images/5c820ea0-eae1-4d10-96e5-1601d08b29f2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 152.0,
+      "y": 947.0,
+      "width": 87.0,
+      "height": 50.0,
+      "imageUrl": "../data/answers/images/5c820ea0-eae1-4d10-96e5-1601d08b29f2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 300.0,
+      "y": 947.0,
+      "width": 90.0,
+      "height": 50.0,
+      "imageUrl": "../data/answers/images/5c820ea0-eae1-4d10-96e5-1601d08b29f2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 454.0,
+      "y": 947.0,
+      "width": 59.0,
+      "height": 50.0,
+      "imageUrl": "../data/answers/images/5c820ea0-eae1-4d10-96e5-1601d08b29f2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 197.0,
+      "width": 479.0,
+      "height": 33.0,
+      "imageUrl": "../data/answers/images/43b83d03-712d-45ba-8e1f-3ef9de7c4b5c.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 238.0,
+      "width": 479.0,
+      "height": 27.0,
+      "imageUrl": "../data/answers/images/43b83d03-712d-45ba-8e1f-3ef9de7c4b5c.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 273.0,
+      "width": 479.0,
+      "height": 33.0,
+      "imageUrl": "../data/answers/images/43b83d03-712d-45ba-8e1f-3ef9de7c4b5c.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 313.0,
+      "width": 479.0,
+      "height": 31.0,
+      "imageUrl": "../data/answers/images/43b83d03-712d-45ba-8e1f-3ef9de7c4b5c.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 10.0,
+      "y": 580.0,
+      "width": 109.0,
+      "height": 218.0,
+      "imageUrl": "../data/answers/images/146c49c4-ba44-4c16-a113-a3ad118560b4.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 342.0,
+      "y": 580.0,
+      "width": 106.0,
+      "height": 218.0,
+      "imageUrl": "../data/answers/images/146c49c4-ba44-4c16-a113-a3ad118560b4.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 669.0,
+      "y": 580.0,
+      "width": 115.0,
+      "height": 218.0,
+      "imageUrl": "../data/answers/images/146c49c4-ba44-4c16-a113-a3ad118560b4.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 999.0,
+      "y": 580.0,
+      "width": 107.0,
+      "height": 218.0,
+      "imageUrl": "../data/answers/images/146c49c4-ba44-4c16-a113-a3ad118560b4.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1.0,
+      "y": 378.0,
+      "width": 449.0,
+      "height": 36.0,
+      "imageUrl": "../data/answers/images/7fc67314-086c-400b-8cd5-d0cf40c59f0a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1.0,
+      "y": 417.0,
+      "width": 449.0,
+      "height": 38.0,
+      "imageUrl": "../data/answers/images/7fc67314-086c-400b-8cd5-d0cf40c59f0a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1.0,
+      "y": 457.0,
+      "width": 449.0,
+      "height": 31.0,
+      "imageUrl": "../data/answers/images/7fc67314-086c-400b-8cd5-d0cf40c59f0a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1.0,
+      "y": 493.0,
+      "width": 449.0,
+      "height": 46.0,
+      "imageUrl": "../data/answers/images/7fc67314-086c-400b-8cd5-d0cf40c59f0a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 60.0,
+      "width": 923.0,
+      "height": 35.0,
+      "imageUrl": "../data/answers/images/a80e14fc-9b95-4d4b-bf9f-383885bef360.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 101.0,
+      "width": 923.0,
+      "height": 31.0,
+      "imageUrl": "../data/answers/images/a80e14fc-9b95-4d4b-bf9f-383885bef360.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 141.0,
+      "width": 923.0,
+      "height": 34.0,
+      "imageUrl": "../data/answers/images/a80e14fc-9b95-4d4b-bf9f-383885bef360.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 180.0,
+      "width": 923.0,
+      "height": 33.0,
+      "imageUrl": "../data/answers/images/a80e14fc-9b95-4d4b-bf9f-383885bef360.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 93.0,
+      "width": 502.0,
+      "height": 35.0,
+      "imageUrl": "../data/answers/images/32080353-5037-4402-b077-da428620319b.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 134.0,
+      "width": 502.0,
+      "height": 61.0,
+      "imageUrl": "../data/answers/images/32080353-5037-4402-b077-da428620319b.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 201.0,
+      "width": 502.0,
+      "height": 38.0,
+      "imageUrl": "../data/answers/images/32080353-5037-4402-b077-da428620319b.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 245.0,
+      "width": 502.0,
+      "height": 38.0,
+      "imageUrl": "../data/answers/images/32080353-5037-4402-b077-da428620319b.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 12.0,
+      "y": 120.0,
+      "width": 509.0,
+      "height": 136.0,
+      "imageUrl": "../data/answers/images/da52998e-d3bf-487b-b3ae-2ec5614429dc.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 12.0,
+      "y": 261.0,
+      "width": 509.0,
+      "height": 98.0,
+      "imageUrl": "../data/answers/images/da52998e-d3bf-487b-b3ae-2ec5614429dc.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 12.0,
+      "y": 365.0,
+      "width": 509.0,
+      "height": 97.0,
+      "imageUrl": "../data/answers/images/da52998e-d3bf-487b-b3ae-2ec5614429dc.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 12.0,
+      "y": 468.0,
+      "width": 509.0,
+      "height": 107.0,
+      "imageUrl": "../data/answers/images/da52998e-d3bf-487b-b3ae-2ec5614429dc.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 8.0,
+      "y": 378.0,
+      "width": 52.0,
+      "height": 27.0,
+      "imageUrl": "../data/answers/images/c65ec4a8-436c-4aec-9033-4d19c8f8b0c5.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 152.0,
+      "y": 378.0,
+      "width": 49.0,
+      "height": 27.0,
+      "imageUrl": "../data/answers/images/c65ec4a8-436c-4aec-9033-4d19c8f8b0c5.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 296.0,
+      "y": 378.0,
+      "width": 58.0,
+      "height": 27.0,
+      "imageUrl": "../data/answers/images/c65ec4a8-436c-4aec-9033-4d19c8f8b0c5.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 447.0,
+      "y": 378.0,
+      "width": 67.0,
+      "height": 27.0,
+      "imageUrl": "../data/answers/images/c65ec4a8-436c-4aec-9033-4d19c8f8b0c5.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1.0,
+      "y": 85.0,
+      "width": 513.0,
+      "height": 38.0,
+      "imageUrl": "../data/answers/images/0822ae78-1460-49f8-95a3-bb02e90eefb9.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1.0,
+      "y": 126.0,
+      "width": 513.0,
+      "height": 60.0,
+      "imageUrl": "../data/answers/images/0822ae78-1460-49f8-95a3-bb02e90eefb9.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1.0,
+      "y": 192.0,
+      "width": 513.0,
+      "height": 74.0,
+      "imageUrl": "../data/answers/images/0822ae78-1460-49f8-95a3-bb02e90eefb9.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1.0,
+      "y": 271.0,
+      "width": 513.0,
+      "height": 68.0,
+      "imageUrl": "../data/answers/images/0822ae78-1460-49f8-95a3-bb02e90eefb9.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 692.0,
+      "width": 77.0,
+      "height": 49.0,
+      "imageUrl": "../data/answers/images/5f723193-6845-42fe-a3bf-ff507eb08ada.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 147.0,
+      "y": 692.0,
+      "width": 86.0,
+      "height": 49.0,
+      "imageUrl": "../data/answers/images/5f723193-6845-42fe-a3bf-ff507eb08ada.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 286.0,
+      "y": 692.0,
+      "width": 88.0,
+      "height": 49.0,
+      "imageUrl": "../data/answers/images/5f723193-6845-42fe-a3bf-ff507eb08ada.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 442.0,
+      "y": 692.0,
+      "width": 62.0,
+      "height": 49.0,
+      "imageUrl": "../data/answers/images/5f723193-6845-42fe-a3bf-ff507eb08ada.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 208.0,
+      "width": 511.0,
+      "height": 64.0,
+      "imageUrl": "../data/answers/images/5f7dacfc-9388-41c6-a81b-4a07dec3f284.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 278.0,
+      "width": 511.0,
+      "height": 63.0,
+      "imageUrl": "../data/answers/images/5f7dacfc-9388-41c6-a81b-4a07dec3f284.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 349.0,
+      "width": 511.0,
+      "height": 40.0,
+      "imageUrl": "../data/answers/images/5f7dacfc-9388-41c6-a81b-4a07dec3f284.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 384.0,
+      "width": 511.0,
+      "height": 72.0,
+      "imageUrl": "../data/answers/images/5f7dacfc-9388-41c6-a81b-4a07dec3f284.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 10.0,
+      "y": 97.0,
+      "width": 255.0,
+      "height": 31.0,
+      "imageUrl": "../data/answers/images/09c3b1d9-d47d-4db7-b203-a6c6342fc5fd.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 10.0,
+      "y": 134.0,
+      "width": 255.0,
+      "height": 29.0,
+      "imageUrl": "../data/answers/images/09c3b1d9-d47d-4db7-b203-a6c6342fc5fd.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 10.0,
+      "y": 177.0,
+      "width": 255.0,
+      "height": 29.0,
+      "imageUrl": "../data/answers/images/09c3b1d9-d47d-4db7-b203-a6c6342fc5fd.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 10.0,
+      "y": 212.0,
+      "width": 255.0,
+      "height": 32.0,
+      "imageUrl": "../data/answers/images/09c3b1d9-d47d-4db7-b203-a6c6342fc5fd.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 540.0,
+      "width": 510.0,
+      "height": 62.0,
+      "imageUrl": "../data/answers/images/c5605048-a900-47e8-b01d-ceadd802d2c3.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 611.0,
+      "width": 510.0,
+      "height": 33.0,
+      "imageUrl": "../data/answers/images/c5605048-a900-47e8-b01d-ceadd802d2c3.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 650.0,
+      "width": 510.0,
+      "height": 63.0,
+      "imageUrl": "../data/answers/images/c5605048-a900-47e8-b01d-ceadd802d2c3.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 723.0,
+      "width": 510.0,
+      "height": 60.0,
+      "imageUrl": "../data/answers/images/c5605048-a900-47e8-b01d-ceadd802d2c3.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 279.0,
+      "width": 259.0,
+      "height": 31.0,
+      "imageUrl": "../data/answers/images/3ee62db2-640d-469f-8a7f-900e64abe325.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 316.0,
+      "width": 259.0,
+      "height": 34.0,
+      "imageUrl": "../data/answers/images/3ee62db2-640d-469f-8a7f-900e64abe325.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 356.0,
+      "width": 259.0,
+      "height": 32.0,
+      "imageUrl": "../data/answers/images/3ee62db2-640d-469f-8a7f-900e64abe325.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 395.0,
+      "width": 259.0,
+      "height": 33.0,
+      "imageUrl": "../data/answers/images/3ee62db2-640d-469f-8a7f-900e64abe325.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 521.0,
+      "width": 78.0,
+      "height": 30.0,
+      "imageUrl": "../data/answers/images/dbde791f-7337-4fe7-983d-c3d4586737c2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 147.0,
+      "y": 521.0,
+      "width": 73.0,
+      "height": 30.0,
+      "imageUrl": "../data/answers/images/dbde791f-7337-4fe7-983d-c3d4586737c2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 286.0,
+      "y": 521.0,
+      "width": 79.0,
+      "height": 30.0,
+      "imageUrl": "../data/answers/images/dbde791f-7337-4fe7-983d-c3d4586737c2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 427.0,
+      "y": 521.0,
+      "width": 79.0,
+      "height": 30.0,
+      "imageUrl": "../data/answers/images/dbde791f-7337-4fe7-983d-c3d4586737c2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 277.0,
+      "width": 499.0,
+      "height": 97.0,
+      "imageUrl": "../data/answers/images/c807ce74-d873-4e3b-a4e4-60ba6be97a60.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 382.0,
+      "width": 499.0,
+      "height": 61.0,
+      "imageUrl": "../data/answers/images/c807ce74-d873-4e3b-a4e4-60ba6be97a60.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 451.0,
+      "width": 499.0,
+      "height": 129.0,
+      "imageUrl": "../data/answers/images/c807ce74-d873-4e3b-a4e4-60ba6be97a60.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 586.0,
+      "width": 499.0,
+      "height": 169.0,
+      "imageUrl": "../data/answers/images/c807ce74-d873-4e3b-a4e4-60ba6be97a60.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 454.0,
+      "width": 422.0,
+      "height": 32.0,
+      "imageUrl": "../data/answers/images/e45e7e53-adcf-4534-a461-4d268d566d3a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 492.0,
+      "width": 422.0,
+      "height": 33.0,
+      "imageUrl": "../data/answers/images/e45e7e53-adcf-4534-a461-4d268d566d3a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 531.0,
+      "width": 422.0,
+      "height": 33.0,
+      "imageUrl": "../data/answers/images/e45e7e53-adcf-4534-a461-4d268d566d3a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 568.0,
+      "width": 422.0,
+      "height": 39.0,
+      "imageUrl": "../data/answers/images/e45e7e53-adcf-4534-a461-4d268d566d3a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 564.0,
+      "width": 69.0,
+      "height": 29.0,
+      "imageUrl": "../data/answers/images/0a11f4f7-e7d0-4813-9623-7bb9f772c131.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 160.0,
+      "y": 564.0,
+      "width": 61.0,
+      "height": 29.0,
+      "imageUrl": "../data/answers/images/0a11f4f7-e7d0-4813-9623-7bb9f772c131.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 312.0,
+      "y": 564.0,
+      "width": 54.0,
+      "height": 29.0,
+      "imageUrl": "../data/answers/images/0a11f4f7-e7d0-4813-9623-7bb9f772c131.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 450.0,
+      "y": 564.0,
+      "width": 66.0,
+      "height": 29.0,
+      "imageUrl": "../data/answers/images/0a11f4f7-e7d0-4813-9623-7bb9f772c131.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 555.0,
+      "width": 95.0,
+      "height": 49.0,
+      "imageUrl": "../data/answers/images/bab652c0-7503-4652-91e7-28ecb0c327b9.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 143.0,
+      "y": 555.0,
+      "width": 90.0,
+      "height": 49.0,
+      "imageUrl": "../data/answers/images/bab652c0-7503-4652-91e7-28ecb0c327b9.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 282.0,
+      "y": 555.0,
+      "width": 98.0,
+      "height": 49.0,
+      "imageUrl": "../data/answers/images/bab652c0-7503-4652-91e7-28ecb0c327b9.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 430.0,
+      "y": 555.0,
+      "width": 82.0,
+      "height": 49.0,
+      "imageUrl": "../data/answers/images/bab652c0-7503-4652-91e7-28ecb0c327b9.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 11.0,
+      "y": 694.0,
+      "width": 190.0,
+      "height": 36.0,
+      "imageUrl": "../data/answers/images/af311619-539e-4b50-bac4-909a8f631d76.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 11.0,
+      "y": 734.0,
+      "width": 190.0,
+      "height": 36.0,
+      "imageUrl": "../data/answers/images/af311619-539e-4b50-bac4-909a8f631d76.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 275.0,
+      "y": 694.0,
+      "width": 194.0,
+      "height": 36.0,
+      "imageUrl": "../data/answers/images/af311619-539e-4b50-bac4-909a8f631d76.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 275.0,
+      "y": 734.0,
+      "width": 194.0,
+      "height": 36.0,
+      "imageUrl": "../data/answers/images/af311619-539e-4b50-bac4-909a8f631d76.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 15.0,
+      "y": 913.0,
+      "width": 147.0,
+      "height": 80.0,
+      "imageUrl": "../data/answers/images/dac51e52-e11a-48bb-8b64-14a368fcbd1b.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 15.0,
+      "y": 998.0,
+      "width": 147.0,
+      "height": 85.0,
+      "imageUrl": "../data/answers/images/dac51e52-e11a-48bb-8b64-14a368fcbd1b.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 279.0,
+      "y": 913.0,
+      "width": 136.0,
+      "height": 80.0,
+      "imageUrl": "../data/answers/images/dac51e52-e11a-48bb-8b64-14a368fcbd1b.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 279.0,
+      "y": 998.0,
+      "width": 136.0,
+      "height": 85.0,
+      "imageUrl": "../data/answers/images/dac51e52-e11a-48bb-8b64-14a368fcbd1b.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 282.0,
+      "width": 95.0,
+      "height": 30.0,
+      "imageUrl": "../data/answers/images/baf1df23-a736-4c5d-8677-029e0fc6ae6d.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 144.0,
+      "y": 282.0,
+      "width": 90.0,
+      "height": 30.0,
+      "imageUrl": "../data/answers/images/baf1df23-a736-4c5d-8677-029e0fc6ae6d.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 277.0,
+      "y": 282.0,
+      "width": 96.0,
+      "height": 30.0,
+      "imageUrl": "../data/answers/images/baf1df23-a736-4c5d-8677-029e0fc6ae6d.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 414.0,
+      "y": 282.0,
+      "width": 96.0,
+      "height": 30.0,
+      "imageUrl": "../data/answers/images/baf1df23-a736-4c5d-8677-029e0fc6ae6d.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 2.0,
+      "y": 308.0,
+      "width": 80.0,
+      "height": 36.0,
+      "imageUrl": "../data/answers/images/c4eb03f9-7d2b-462a-8bc1-03589d93ebd2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 162.0,
+      "y": 308.0,
+      "width": 60.0,
+      "height": 36.0,
+      "imageUrl": "../data/answers/images/c4eb03f9-7d2b-462a-8bc1-03589d93ebd2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 304.0,
+      "y": 308.0,
+      "width": 66.0,
+      "height": 36.0,
+      "imageUrl": "../data/answers/images/c4eb03f9-7d2b-462a-8bc1-03589d93ebd2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 447.0,
+      "y": 308.0,
+      "width": 67.0,
+      "height": 36.0,
+      "imageUrl": "../data/answers/images/c4eb03f9-7d2b-462a-8bc1-03589d93ebd2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 666.0,
+      "width": 66.0,
+      "height": 29.0,
+      "imageUrl": "../data/answers/images/7abdc814-ef18-4fdd-bdf4-d9a6edcb8327.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 141.0,
+      "y": 666.0,
+      "width": 74.0,
+      "height": 29.0,
+      "imageUrl": "../data/answers/images/7abdc814-ef18-4fdd-bdf4-d9a6edcb8327.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 285.0,
+      "y": 666.0,
+      "width": 78.0,
+      "height": 29.0,
+      "imageUrl": "../data/answers/images/7abdc814-ef18-4fdd-bdf4-d9a6edcb8327.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 431.0,
+      "y": 666.0,
+      "width": 76.0,
+      "height": 29.0,
+      "imageUrl": "../data/answers/images/7abdc814-ef18-4fdd-bdf4-d9a6edcb8327.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 458.0,
+      "width": 70.0,
+      "height": 55.0,
+      "imageUrl": "../data/answers/images/2c3e6ea0-ea82-47e4-b5c2-d8ff91bbaf7e.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 331.0,
+      "y": 458.0,
+      "width": 91.0,
+      "height": 55.0,
+      "imageUrl": "../data/answers/images/2c3e6ea0-ea82-47e4-b5c2-d8ff91bbaf7e.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 680.0,
+      "y": 458.0,
+      "width": 106.0,
+      "height": 55.0,
+      "imageUrl": "../data/answers/images/2c3e6ea0-ea82-47e4-b5c2-d8ff91bbaf7e.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1021.0,
+      "y": 458.0,
+      "width": 81.0,
+      "height": 55.0,
+      "imageUrl": "../data/answers/images/2c3e6ea0-ea82-47e4-b5c2-d8ff91bbaf7e.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 0.0,
+      "y": 65.0,
+      "width": 91.0,
+      "height": 45.0,
+      "imageUrl": "../data/answers/images/d001f03b-93d9-4f3a-bdaa-135054106a91.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 331.0,
+      "y": 65.0,
+      "width": 92.0,
+      "height": 45.0,
+      "imageUrl": "../data/answers/images/d001f03b-93d9-4f3a-bdaa-135054106a91.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 683.0,
+      "y": 65.0,
+      "width": 90.0,
+      "height": 45.0,
+      "imageUrl": "../data/answers/images/d001f03b-93d9-4f3a-bdaa-135054106a91.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1038.0,
+      "y": 65.0,
+      "width": 68.0,
+      "height": 45.0,
+      "imageUrl": "../data/answers/images/d001f03b-93d9-4f3a-bdaa-135054106a91.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 60.0,
+      "width": 141.0,
+      "height": 44.0,
+      "imageUrl": "../data/answers/images/82db66a0-dc27-4c4f-9abd-4027abbf5170.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 321.0,
+      "y": 60.0,
+      "width": 158.0,
+      "height": 44.0,
+      "imageUrl": "../data/answers/images/82db66a0-dc27-4c4f-9abd-4027abbf5170.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 639.0,
+      "y": 60.0,
+      "width": 166.0,
+      "height": 44.0,
+      "imageUrl": "../data/answers/images/82db66a0-dc27-4c4f-9abd-4027abbf5170.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 956.0,
+      "y": 60.0,
+      "width": 147.0,
+      "height": 44.0,
+      "imageUrl": "../data/answers/images/82db66a0-dc27-4c4f-9abd-4027abbf5170.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 596.0,
+      "width": 77.0,
+      "height": 44.0,
+      "imageUrl": "../data/answers/images/a0105424-aee6-4c78-a1d0-041b3b43ca8f.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 346.0,
+      "y": 596.0,
+      "width": 81.0,
+      "height": 44.0,
+      "imageUrl": "../data/answers/images/a0105424-aee6-4c78-a1d0-041b3b43ca8f.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 693.0,
+      "y": 596.0,
+      "width": 72.0,
+      "height": 44.0,
+      "imageUrl": "../data/answers/images/a0105424-aee6-4c78-a1d0-041b3b43ca8f.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1033.0,
+      "y": 596.0,
+      "width": 75.0,
+      "height": 44.0,
+      "imageUrl": "../data/answers/images/a0105424-aee6-4c78-a1d0-041b3b43ca8f.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 693.0,
+      "width": 65.0,
+      "height": 29.0,
+      "imageUrl": "../data/answers/images/93b1642d-bc8a-4a6b-8f8a-73389566bb5a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 155.0,
+      "y": 693.0,
+      "width": 60.0,
+      "height": 29.0,
+      "imageUrl": "../data/answers/images/93b1642d-bc8a-4a6b-8f8a-73389566bb5a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 299.0,
+      "y": 693.0,
+      "width": 66.0,
+      "height": 29.0,
+      "imageUrl": "../data/answers/images/93b1642d-bc8a-4a6b-8f8a-73389566bb5a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 444.0,
+      "y": 693.0,
+      "width": 65.0,
+      "height": 29.0,
+      "imageUrl": "../data/answers/images/93b1642d-bc8a-4a6b-8f8a-73389566bb5a.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 362.0,
+      "width": 87.0,
+      "height": 46.0,
+      "imageUrl": "../data/answers/images/fc090953-1d63-4d20-aeb4-53e75a990de3.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 146.0,
+      "y": 362.0,
+      "width": 75.0,
+      "height": 46.0,
+      "imageUrl": "../data/answers/images/fc090953-1d63-4d20-aeb4-53e75a990de3.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 287.0,
+      "y": 362.0,
+      "width": 97.0,
+      "height": 46.0,
+      "imageUrl": "../data/answers/images/fc090953-1d63-4d20-aeb4-53e75a990de3.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 430.0,
+      "y": 362.0,
+      "width": 85.0,
+      "height": 46.0,
+      "imageUrl": "../data/answers/images/fc090953-1d63-4d20-aeb4-53e75a990de3.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 499.0,
+      "width": 78.0,
+      "height": 31.0,
+      "imageUrl": "../data/answers/images/c8f8965f-9ea9-43ed-a36a-96f4f163a543.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 147.0,
+      "y": 499.0,
+      "width": 73.0,
+      "height": 31.0,
+      "imageUrl": "../data/answers/images/c8f8965f-9ea9-43ed-a36a-96f4f163a543.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 287.0,
+      "y": 499.0,
+      "width": 77.0,
+      "height": 31.0,
+      "imageUrl": "../data/answers/images/c8f8965f-9ea9-43ed-a36a-96f4f163a543.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 429.0,
+      "y": 499.0,
+      "width": 78.0,
+      "height": 31.0,
+      "imageUrl": "../data/answers/images/c8f8965f-9ea9-43ed-a36a-96f4f163a543.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 593.0,
+      "width": 80.0,
+      "height": 28.0,
+      "imageUrl": "../data/answers/images/a34ce012-bfdc-4d95-b81c-375a27ba8830.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 148.0,
+      "y": 593.0,
+      "width": 70.0,
+      "height": 28.0,
+      "imageUrl": "../data/answers/images/a34ce012-bfdc-4d95-b81c-375a27ba8830.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 287.0,
+      "y": 593.0,
+      "width": 77.0,
+      "height": 28.0,
+      "imageUrl": "../data/answers/images/a34ce012-bfdc-4d95-b81c-375a27ba8830.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 427.0,
+      "y": 593.0,
+      "width": 79.0,
+      "height": 28.0,
+      "imageUrl": "../data/answers/images/a34ce012-bfdc-4d95-b81c-375a27ba8830.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 273.0,
+      "width": 495.0,
+      "height": 477.0,
+      "imageUrl": "../data/answers/images/3497bb68-0eb3-435f-8cd4-55ccf8a332e5.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 766.0,
+      "width": 495.0,
+      "height": 432.0,
+      "imageUrl": "../data/answers/images/3497bb68-0eb3-435f-8cd4-55ccf8a332e5.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 568.0,
+      "y": 273.0,
+      "width": 475.0,
+      "height": 477.0,
+      "imageUrl": "../data/answers/images/3497bb68-0eb3-435f-8cd4-55ccf8a332e5.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 568.0,
+      "y": 766.0,
+      "width": 475.0,
+      "height": 432.0,
+      "imageUrl": "../data/answers/images/3497bb68-0eb3-435f-8cd4-55ccf8a332e5.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 219.0,
+      "width": 513.0,
+      "height": 33.0,
+      "imageUrl": "../data/answers/images/7e11557f-7c66-464b-b07c-dd46493d0e6c.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 261.0,
+      "width": 513.0,
+      "height": 68.0,
+      "imageUrl": "../data/answers/images/7e11557f-7c66-464b-b07c-dd46493d0e6c.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 334.0,
+      "width": 513.0,
+      "height": 33.0,
+      "imageUrl": "../data/answers/images/7e11557f-7c66-464b-b07c-dd46493d0e6c.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 373.0,
+      "width": 513.0,
+      "height": 33.0,
+      "imageUrl": "../data/answers/images/7e11557f-7c66-464b-b07c-dd46493d0e6c.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 619.0,
+      "width": 116.0,
+      "height": 31.0,
+      "imageUrl": "../data/answers/images/039ac941-ad00-47f6-9804-42b629888287.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 657.0,
+      "width": 116.0,
+      "height": 30.0,
+      "imageUrl": "../data/answers/images/039ac941-ad00-47f6-9804-42b629888287.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 276.0,
+      "y": 619.0,
+      "width": 101.0,
+      "height": 31.0,
+      "imageUrl": "../data/answers/images/039ac941-ad00-47f6-9804-42b629888287.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 276.0,
+      "y": 657.0,
+      "width": 101.0,
+      "height": 30.0,
+      "imageUrl": "../data/answers/images/039ac941-ad00-47f6-9804-42b629888287.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1.0,
+      "y": 309.0,
+      "width": 513.0,
+      "height": 63.0,
+      "imageUrl": "../data/answers/images/c17ed7ae-fafb-44bc-bad5-77b4b70badbb.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1.0,
+      "y": 380.0,
+      "width": 513.0,
+      "height": 38.0,
+      "imageUrl": "../data/answers/images/c17ed7ae-fafb-44bc-bad5-77b4b70badbb.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1.0,
+      "y": 424.0,
+      "width": 513.0,
+      "height": 39.0,
+      "imageUrl": "../data/answers/images/c17ed7ae-fafb-44bc-bad5-77b4b70badbb.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1.0,
+      "y": 463.0,
+      "width": 513.0,
+      "height": 36.0,
+      "imageUrl": "../data/answers/images/c17ed7ae-fafb-44bc-bad5-77b4b70badbb.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1.0,
+      "y": 791.0,
+      "width": 138.0,
+      "height": 31.0,
+      "imageUrl": "../data/answers/images/1b6b2190-1848-42e0-abf9-7c5a1a0622a2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1.0,
+      "y": 830.0,
+      "width": 138.0,
+      "height": 33.0,
+      "imageUrl": "../data/answers/images/1b6b2190-1848-42e0-abf9-7c5a1a0622a2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 269.0,
+      "y": 791.0,
+      "width": 109.0,
+      "height": 31.0,
+      "imageUrl": "../data/answers/images/1b6b2190-1848-42e0-abf9-7c5a1a0622a2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 269.0,
+      "y": 830.0,
+      "width": 109.0,
+      "height": 33.0,
+      "imageUrl": "../data/answers/images/1b6b2190-1848-42e0-abf9-7c5a1a0622a2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 474.0,
+      "width": 698.0,
+      "height": 41.0,
+      "imageUrl": "../data/answers/images/81a63031-2796-459c-8cbd-5e6ac12c7a15.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 529.0,
+      "width": 698.0,
+      "height": 38.0,
+      "imageUrl": "../data/answers/images/81a63031-2796-459c-8cbd-5e6ac12c7a15.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 582.0,
+      "width": 698.0,
+      "height": 34.0,
+      "imageUrl": "../data/answers/images/81a63031-2796-459c-8cbd-5e6ac12c7a15.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 633.0,
+      "width": 698.0,
+      "height": 45.0,
+      "imageUrl": "../data/answers/images/81a63031-2796-459c-8cbd-5e6ac12c7a15.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 351.0,
+      "width": 545.0,
+      "height": 171.0,
+      "imageUrl": "../data/answers/images/4fa06f3e-0845-4dad-8203-b5eea7e62688.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 531.0,
+      "width": 545.0,
+      "height": 162.0,
+      "imageUrl": "../data/answers/images/4fa06f3e-0845-4dad-8203-b5eea7e62688.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 575.0,
+      "y": 351.0,
+      "width": 541.0,
+      "height": 171.0,
+      "imageUrl": "../data/answers/images/4fa06f3e-0845-4dad-8203-b5eea7e62688.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 575.0,
+      "y": 531.0,
+      "width": 541.0,
+      "height": 162.0,
+      "imageUrl": "../data/answers/images/4fa06f3e-0845-4dad-8203-b5eea7e62688.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 16.0,
+      "y": 843.0,
+      "width": 141.0,
+      "height": 38.0,
+      "imageUrl": "../data/answers/images/5928dc79-5e91-4211-aaa5-85601869d1aa.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 16.0,
+      "y": 888.0,
+      "width": 141.0,
+      "height": 37.0,
+      "imageUrl": "../data/answers/images/5928dc79-5e91-4211-aaa5-85601869d1aa.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 278.0,
+      "y": 843.0,
+      "width": 139.0,
+      "height": 38.0,
+      "imageUrl": "../data/answers/images/5928dc79-5e91-4211-aaa5-85601869d1aa.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 278.0,
+      "y": 888.0,
+      "width": 139.0,
+      "height": 37.0,
+      "imageUrl": "../data/answers/images/5928dc79-5e91-4211-aaa5-85601869d1aa.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 17.0,
+      "y": 569.0,
+      "width": 281.0,
+      "height": 222.0,
+      "imageUrl": "../data/answers/images/87643645-399c-414c-bc00-2c2c1fa79058.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 17.0,
+      "y": 815.0,
+      "width": 281.0,
+      "height": 232.0,
+      "imageUrl": "../data/answers/images/87643645-399c-414c-bc00-2c2c1fa79058.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 501.0,
+      "y": 569.0,
+      "width": 300.0,
+      "height": 222.0,
+      "imageUrl": "../data/answers/images/87643645-399c-414c-bc00-2c2c1fa79058.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 501.0,
+      "y": 815.0,
+      "width": 300.0,
+      "height": 232.0,
+      "imageUrl": "../data/answers/images/87643645-399c-414c-bc00-2c2c1fa79058.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 558.0,
+      "width": 153.0,
+      "height": 69.0,
+      "imageUrl": "../data/answers/images/7f182cc7-c0a6-4159-8f57-2a48ec5b2b53.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 328.0,
+      "y": 558.0,
+      "width": 146.0,
+      "height": 69.0,
+      "imageUrl": "../data/answers/images/7f182cc7-c0a6-4159-8f57-2a48ec5b2b53.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 634.0,
+      "y": 558.0,
+      "width": 173.0,
+      "height": 69.0,
+      "imageUrl": "../data/answers/images/7f182cc7-c0a6-4159-8f57-2a48ec5b2b53.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 968.0,
+      "y": 558.0,
+      "width": 140.0,
+      "height": 69.0,
+      "imageUrl": "../data/answers/images/7f182cc7-c0a6-4159-8f57-2a48ec5b2b53.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 337.0,
+      "width": 509.0,
+      "height": 67.0,
+      "imageUrl": "../data/answers/images/d4e4fd78-4768-4148-89f8-943caa8b2b85.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 411.0,
+      "width": 509.0,
+      "height": 64.0,
+      "imageUrl": "../data/answers/images/d4e4fd78-4768-4148-89f8-943caa8b2b85.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 482.0,
+      "width": 509.0,
+      "height": 62.0,
+      "imageUrl": "../data/answers/images/d4e4fd78-4768-4148-89f8-943caa8b2b85.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 551.0,
+      "width": 509.0,
+      "height": 76.0,
+      "imageUrl": "../data/answers/images/d4e4fd78-4768-4148-89f8-943caa8b2b85.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 0.0,
+      "y": 538.0,
+      "width": 353.0,
+      "height": 35.0,
+      "imageUrl": "../data/answers/images/1832f3bd-e771-495e-bca2-fce90c85f97f.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 0.0,
+      "y": 580.0,
+      "width": 353.0,
+      "height": 36.0,
+      "imageUrl": "../data/answers/images/1832f3bd-e771-495e-bca2-fce90c85f97f.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 0.0,
+      "y": 619.0,
+      "width": 353.0,
+      "height": 32.0,
+      "imageUrl": "../data/answers/images/1832f3bd-e771-495e-bca2-fce90c85f97f.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 0.0,
+      "y": 660.0,
+      "width": 353.0,
+      "height": 30.0,
+      "imageUrl": "../data/answers/images/1832f3bd-e771-495e-bca2-fce90c85f97f.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 1091.0,
+      "width": 166.0,
+      "height": 37.0,
+      "imageUrl": "../data/answers/images/e0d74d08-dd86-4f19-a686-d9bc507c26f6.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 1131.0,
+      "width": 166.0,
+      "height": 41.0,
+      "imageUrl": "../data/answers/images/e0d74d08-dd86-4f19-a686-d9bc507c26f6.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 273.0,
+      "y": 1091.0,
+      "width": 130.0,
+      "height": 37.0,
+      "imageUrl": "../data/answers/images/e0d74d08-dd86-4f19-a686-d9bc507c26f6.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 273.0,
+      "y": 1131.0,
+      "width": 130.0,
+      "height": 41.0,
+      "imageUrl": "../data/answers/images/e0d74d08-dd86-4f19-a686-d9bc507c26f6.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 486.0,
+      "width": 496.0,
+      "height": 43.0,
+      "imageUrl": "../data/answers/images/dd02c158-b977-4e95-825d-9b9ae69f213e.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 543.0,
+      "width": 496.0,
+      "height": 45.0,
+      "imageUrl": "../data/answers/images/dd02c158-b977-4e95-825d-9b9ae69f213e.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 599.0,
+      "width": 496.0,
+      "height": 44.0,
+      "imageUrl": "../data/answers/images/dd02c158-b977-4e95-825d-9b9ae69f213e.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 651.0,
+      "width": 496.0,
+      "height": 41.0,
+      "imageUrl": "../data/answers/images/dd02c158-b977-4e95-825d-9b9ae69f213e.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 2.0,
+      "y": 645.0,
+      "width": 137.0,
+      "height": 38.0,
+      "imageUrl": "../data/answers/images/f5e0a3df-f9ab-422b-998f-548d08f658c0.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 317.0,
+      "y": 645.0,
+      "width": 153.0,
+      "height": 38.0,
+      "imageUrl": "../data/answers/images/f5e0a3df-f9ab-422b-998f-548d08f658c0.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 646.0,
+      "y": 645.0,
+      "width": 160.0,
+      "height": 38.0,
+      "imageUrl": "../data/answers/images/f5e0a3df-f9ab-422b-998f-548d08f658c0.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 998.0,
+      "y": 645.0,
+      "width": 112.0,
+      "height": 38.0,
+      "imageUrl": "../data/answers/images/f5e0a3df-f9ab-422b-998f-548d08f658c0.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 143.0,
+      "width": 495.0,
+      "height": 180.0,
+      "imageUrl": "../data/answers/images/0c2e0674-fbb5-4262-8591-89b66a9f85b3.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 330.0,
+      "width": 495.0,
+      "height": 176.0,
+      "imageUrl": "../data/answers/images/0c2e0674-fbb5-4262-8591-89b66a9f85b3.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 597.0,
+      "y": 143.0,
+      "width": 488.0,
+      "height": 180.0,
+      "imageUrl": "../data/answers/images/0c2e0674-fbb5-4262-8591-89b66a9f85b3.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 597.0,
+      "y": 330.0,
+      "width": 488.0,
+      "height": 176.0,
+      "imageUrl": "../data/answers/images/0c2e0674-fbb5-4262-8591-89b66a9f85b3.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 6.0,
+      "y": 383.0,
+      "width": 205.0,
+      "height": 200.0,
+      "imageUrl": "../data/answers/images/f0ca22dc-52b0-4a06-a5f1-0423f3b1df22.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 299.0,
+      "y": 383.0,
+      "width": 194.0,
+      "height": 200.0,
+      "imageUrl": "../data/answers/images/f0ca22dc-52b0-4a06-a5f1-0423f3b1df22.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 618.0,
+      "y": 383.0,
+      "width": 189.0,
+      "height": 200.0,
+      "imageUrl": "../data/answers/images/f0ca22dc-52b0-4a06-a5f1-0423f3b1df22.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 938.0,
+      "y": 383.0,
+      "width": 162.0,
+      "height": 200.0,
+      "imageUrl": "../data/answers/images/f0ca22dc-52b0-4a06-a5f1-0423f3b1df22.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 819.0,
+      "width": 704.0,
+      "height": 38.0,
+      "imageUrl": "../data/answers/images/9ac299ce-b20d-4d2f-a048-d2506fd26b3d.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 869.0,
+      "width": 704.0,
+      "height": 44.0,
+      "imageUrl": "../data/answers/images/9ac299ce-b20d-4d2f-a048-d2506fd26b3d.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 930.0,
+      "width": 704.0,
+      "height": 40.0,
+      "imageUrl": "../data/answers/images/9ac299ce-b20d-4d2f-a048-d2506fd26b3d.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 982.0,
+      "width": 704.0,
+      "height": 55.0,
+      "imageUrl": "../data/answers/images/9ac299ce-b20d-4d2f-a048-d2506fd26b3d.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 8.0,
+      "y": 421.0,
+      "width": 116.0,
+      "height": 41.0,
+      "imageUrl": "../data/answers/images/a685c9ad-5d48-4c04-a1c8-6a3a191520c0.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 341.0,
+      "y": 421.0,
+      "width": 94.0,
+      "height": 41.0,
+      "imageUrl": "../data/answers/images/a685c9ad-5d48-4c04-a1c8-6a3a191520c0.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 655.0,
+      "y": 421.0,
+      "width": 111.0,
+      "height": 41.0,
+      "imageUrl": "../data/answers/images/a685c9ad-5d48-4c04-a1c8-6a3a191520c0.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 984.0,
+      "y": 421.0,
+      "width": 117.0,
+      "height": 41.0,
+      "imageUrl": "../data/answers/images/a685c9ad-5d48-4c04-a1c8-6a3a191520c0.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 757.0,
+      "width": 813.0,
+      "height": 34.0,
+      "imageUrl": "../data/answers/images/247dbcf7-e691-4d76-afd6-e7ed5eb8693b.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 797.0,
+      "width": 813.0,
+      "height": 34.0,
+      "imageUrl": "../data/answers/images/247dbcf7-e691-4d76-afd6-e7ed5eb8693b.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 837.5,
+      "width": 813.0,
+      "height": 31.0,
+      "imageUrl": "../data/answers/images/247dbcf7-e691-4d76-afd6-e7ed5eb8693b.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 874.5,
+      "width": 813.0,
+      "height": 34.0,
+      "imageUrl": "../data/answers/images/247dbcf7-e691-4d76-afd6-e7ed5eb8693b.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 17.0,
+      "y": 453.0,
+      "width": 483.0,
+      "height": 52.0,
+      "imageUrl": "../data/answers/images/5e85373d-8131-4b1c-a7c5-a4c841695ca7.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 17.0,
+      "y": 518.0,
+      "width": 483.0,
+      "height": 91.0,
+      "imageUrl": "../data/answers/images/5e85373d-8131-4b1c-a7c5-a4c841695ca7.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 17.0,
+      "y": 620.0,
+      "width": 483.0,
+      "height": 92.0,
+      "imageUrl": "../data/answers/images/5e85373d-8131-4b1c-a7c5-a4c841695ca7.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 17.0,
+      "y": 725.0,
+      "width": 483.0,
+      "height": 50.0,
+      "imageUrl": "../data/answers/images/5e85373d-8131-4b1c-a7c5-a4c841695ca7.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 12.0,
+      "y": 832.0,
+      "width": 122.0,
+      "height": 46.0,
+      "imageUrl": "../data/answers/images/16e88da5-4a75-4144-a0c6-ff8fb18ffc44.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 157.0,
+      "y": 832.0,
+      "width": 108.0,
+      "height": 46.0,
+      "imageUrl": "../data/answers/images/16e88da5-4a75-4144-a0c6-ff8fb18ffc44.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 280.0,
+      "y": 832.0,
+      "width": 112.0,
+      "height": 46.0,
+      "imageUrl": "../data/answers/images/16e88da5-4a75-4144-a0c6-ff8fb18ffc44.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 412.0,
+      "y": 832.0,
+      "width": 115.0,
+      "height": 46.0,
+      "imageUrl": "../data/answers/images/16e88da5-4a75-4144-a0c6-ff8fb18ffc44.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 11.0,
+      "y": 279.0,
+      "width": 128.0,
+      "height": 40.0,
+      "imageUrl": "../data/answers/images/0c334926-849c-440a-910d-eeaa680c1b7f.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 11.0,
+      "y": 324.0,
+      "width": 128.0,
+      "height": 34.0,
+      "imageUrl": "../data/answers/images/0c334926-849c-440a-910d-eeaa680c1b7f.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 272.0,
+      "y": 279.0,
+      "width": 151.0,
+      "height": 40.0,
+      "imageUrl": "../data/answers/images/0c334926-849c-440a-910d-eeaa680c1b7f.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 272.0,
+      "y": 324.0,
+      "width": 151.0,
+      "height": 34.0,
+      "imageUrl": "../data/answers/images/0c334926-849c-440a-910d-eeaa680c1b7f.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 6.0,
+      "y": 273.0,
+      "width": 127.0,
+      "height": 31.0,
+      "imageUrl": "../data/answers/images/793edb3e-ccfb-4796-ac46-f981dc4b7240.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 6.0,
+      "y": 310.0,
+      "width": 127.0,
+      "height": 32.0,
+      "imageUrl": "../data/answers/images/793edb3e-ccfb-4796-ac46-f981dc4b7240.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 275.0,
+      "y": 273.0,
+      "width": 135.0,
+      "height": 31.0,
+      "imageUrl": "../data/answers/images/793edb3e-ccfb-4796-ac46-f981dc4b7240.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 275.0,
+      "y": 310.0,
+      "width": 135.0,
+      "height": 32.0,
+      "imageUrl": "../data/answers/images/793edb3e-ccfb-4796-ac46-f981dc4b7240.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 507.0,
+      "width": 741.0,
+      "height": 45.0,
+      "imageUrl": "../data/answers/images/0bdb81e7-d309-45cc-9500-dc01b8ae3b4c.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 555.0,
+      "width": 741.0,
+      "height": 26.0,
+      "imageUrl": "../data/answers/images/0bdb81e7-d309-45cc-9500-dc01b8ae3b4c.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 591.0,
+      "width": 741.0,
+      "height": 33.0,
+      "imageUrl": "../data/answers/images/0bdb81e7-d309-45cc-9500-dc01b8ae3b4c.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 630.0,
+      "width": 741.0,
+      "height": 35.0,
+      "imageUrl": "../data/answers/images/0bdb81e7-d309-45cc-9500-dc01b8ae3b4c.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 582.0,
+      "width": 510.0,
+      "height": 31.0,
+      "imageUrl": "../data/answers/images/3dbad6fb-4df9-4d1d-a664-0ae394247d94.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 616.0,
+      "width": 510.0,
+      "height": 39.0,
+      "imageUrl": "../data/answers/images/3dbad6fb-4df9-4d1d-a664-0ae394247d94.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 659.0,
+      "width": 510.0,
+      "height": 62.0,
+      "imageUrl": "../data/answers/images/3dbad6fb-4df9-4d1d-a664-0ae394247d94.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 9.0,
+      "y": 725.75,
+      "width": 510.0,
+      "height": 66.0,
+      "imageUrl": "../data/answers/images/3dbad6fb-4df9-4d1d-a664-0ae394247d94.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 55.0,
+      "width": 515.0,
+      "height": 69.0,
+      "imageUrl": "../data/answers/images/1803cfe7-42d4-49ec-af16-3c45fa468867.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 128.0,
+      "width": 515.0,
+      "height": 93.0,
+      "imageUrl": "../data/answers/images/1803cfe7-42d4-49ec-af16-3c45fa468867.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 227.0,
+      "width": 515.0,
+      "height": 65.0,
+      "imageUrl": "../data/answers/images/1803cfe7-42d4-49ec-af16-3c45fa468867.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 3.0,
+      "y": 298.0,
+      "width": 515.0,
+      "height": 74.0,
+      "imageUrl": "../data/answers/images/1803cfe7-42d4-49ec-af16-3c45fa468867.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 7.0,
+      "y": 575.0,
+      "width": 182.0,
+      "height": 68.0,
+      "imageUrl": "../data/answers/images/72b51abe-9557-48b3-b35a-7b312eb2f714.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 333.0,
+      "y": 575.0,
+      "width": 146.0,
+      "height": 68.0,
+      "imageUrl": "../data/answers/images/72b51abe-9557-48b3-b35a-7b312eb2f714.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 660.0,
+      "y": 575.0,
+      "width": 169.0,
+      "height": 68.0,
+      "imageUrl": "../data/answers/images/72b51abe-9557-48b3-b35a-7b312eb2f714.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 1005.0,
+      "y": 575.0,
+      "width": 102.0,
+      "height": 68.0,
+      "imageUrl": "../data/answers/images/72b51abe-9557-48b3-b35a-7b312eb2f714.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 598.0,
+      "width": 197.0,
+      "height": 30.0,
+      "imageUrl": "../data/answers/images/3aa714f0-c9f6-4cf7-ae67-a3653ad50b02.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 4.0,
+      "y": 636.0,
+      "width": 197.0,
+      "height": 34.0,
+      "imageUrl": "../data/answers/images/3aa714f0-c9f6-4cf7-ae67-a3653ad50b02.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 272.0,
+      "y": 598.0,
+      "width": 198.0,
+      "height": 30.0,
+      "imageUrl": "../data/answers/images/3aa714f0-c9f6-4cf7-ae67-a3653ad50b02.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 272.0,
+      "y": 636.0,
+      "width": 198.0,
+      "height": 34.0,
+      "imageUrl": "../data/answers/images/3aa714f0-c9f6-4cf7-ae67-a3653ad50b02.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 536.0,
+      "width": 197.0,
+      "height": 35.0,
+      "imageUrl": "../data/answers/images/911b61c2-d4a0-43b1-b7ea-1deed85a31b9.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 5.0,
+      "y": 579.0,
+      "width": 197.0,
+      "height": 39.0,
+      "imageUrl": "../data/answers/images/911b61c2-d4a0-43b1-b7ea-1deed85a31b9.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 312.0,
+      "y": 536.0,
+      "width": 148.0,
+      "height": 35.0,
+      "imageUrl": "../data/answers/images/911b61c2-d4a0-43b1-b7ea-1deed85a31b9.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 312.0,
+      "y": 579.0,
+      "width": 148.0,
+      "height": 39.0,
+      "imageUrl": "../data/answers/images/911b61c2-d4a0-43b1-b7ea-1deed85a31b9.jpg"
+    }
   }
 ]
