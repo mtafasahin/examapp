@@ -16,12 +16,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-question-canvas-view',
+  selector: 'app-question-canvas-view-v2',
   imports: [SafeHtmlPipe, MatButtonModule, MatIconModule],
-  templateUrl: './question-canvas-view.component.html',
-  styleUrl: './question-canvas-view.component.scss',
+  templateUrl: './question-canvas-view-v2.component.html',
+  styleUrls: ['./question-canvas-view-v2.component.scss'],
 })
-export class QuestionCanvasViewComponent implements AfterViewInit, AfterViewChecked {
+export class QuestionCanvasViewComponentv2 implements AfterViewInit, AfterViewChecked {
   @ViewChild('passagecanvas', { static: false }) passageCanvas!: ElementRef<HTMLCanvasElement>;
   @ViewChild('canvas', { static: true }) canvas!: ElementRef<HTMLCanvasElement>;
 
