@@ -41425,5 +41425,86 @@
       "height": 446.0,
       "imageUrl": "../data/questions/images/4e2dc6f5-f2d3-4929-9964-b93e755ace92.jpg"
     }
+  },
+  {
+    "question": {
+      "x": 219.0,
+      "y": 189.0,
+      "width": 1072.0,
+      "height": 649.0,
+      "imageUrl": "../data/questions/images/aab3ce53-dec4-4a04-9a56-585d776046f0.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 226.478515625,
+      "y": 920.255859375,
+      "width": 1072.0,
+      "height": 830.0,
+      "imageUrl": "../data/questions/images/aab3ce53-dec4-4a04-9a56-585d776046f0.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 194.478515625,
+      "y": 199.255859375,
+      "width": 1063.0,
+      "height": 939.0,
+      "imageUrl": "../data/questions/images/34c74935-1600-4cde-b849-e8eea82a23a7.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 188.478515625,
+      "y": 1173.255859375,
+      "width": 1070.0,
+      "height": 580.0,
+      "imageUrl": "../data/questions/images/34c74935-1600-4cde-b849-e8eea82a23a7.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 218.0,
+      "y": 202.0,
+      "width": 1078.0,
+      "height": 546.0,
+      "imageUrl": "../data/questions/images/95dbe9f5-648d-41e9-af16-ac4154bee410.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 228.478515625,
+      "y": 947.755859375,
+      "width": 1071.0,
+      "height": 811.0,
+      "imageUrl": "../data/questions/images/95dbe9f5-648d-41e9-af16-ac4154bee410.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 192.478515625,
+      "y": 207.380859375,
+      "width": 1067.0,
+      "height": 613.0,
+      "imageUrl": "../data/questions/images/ec74a530-a4e6-4029-92e2-6c8267b80534.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 185.478515625,
+      "y": 900.005859375,
+      "width": 1071.0,
+      "height": 862.0,
+      "imageUrl": "../data/questions/images/ec74a530-a4e6-4029-92e2-6c8267b80534.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 179.931640625,
+      "y": 1602.005859375,
+      "width": 1093.0,
+      "height": 155.0,
+      "imageUrl": "../data/questions/images/22677234-70ef-4cab-a7e8-e08ce42fcf3d.jpg"
+    }
   }
 ]
