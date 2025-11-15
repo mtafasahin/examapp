@@ -41416,5 +41416,14 @@
       "height": 205.0,
       "imageUrl": "../data/questions/images/2602cade-7a40-4a40-ae46-ff0fe0fa753a.jpg"
     }
+  },
+  {
+    "question": {
+      "x": 119.75,
+      "y": 377.0,
+      "width": 416.0,
+      "height": 446.0,
+      "imageUrl": "../data/questions/images/4e2dc6f5-f2d3-4929-9964-b93e755ace92.jpg"
+    }
   }
 ]
