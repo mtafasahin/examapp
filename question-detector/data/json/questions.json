@@ -41875,5 +41875,149 @@
       "height": 806.0,
       "imageUrl": "../data/questions/images/1ed21c77-6d4f-460f-ab4c-1118875eb5ae.jpg"
     }
+  },
+  {
+    "question": {
+      "x": 129.0,
+      "y": 850.0,
+      "width": 573.0,
+      "height": 216.0,
+      "imageUrl": "../data/questions/images/e9092815-b750-43a2-83e2-4bac2e337fb2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 132.0,
+      "y": 1399.0,
+      "width": 569.0,
+      "height": 378.0,
+      "imageUrl": "../data/questions/images/e9092815-b750-43a2-83e2-4bac2e337fb2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 789.0,
+      "y": 168.0,
+      "width": 572.0,
+      "height": 753.0,
+      "imageUrl": "../data/questions/images/e9092815-b750-43a2-83e2-4bac2e337fb2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 792.0,
+      "y": 1054.0,
+      "width": 569.0,
+      "height": 724.0,
+      "imageUrl": "../data/questions/images/e9092815-b750-43a2-83e2-4bac2e337fb2.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 172.0,
+      "y": 165.0,
+      "width": 562.0,
+      "height": 207.0,
+      "imageUrl": "../data/questions/images/4ee4ebd8-a2ac-4529-9abc-b09eb2c8945d.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 164.0,
+      "y": 1043.0,
+      "width": 573.0,
+      "height": 759.0,
+      "imageUrl": "../data/questions/images/4ee4ebd8-a2ac-4529-9abc-b09eb2c8945d.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 129.0,
+      "y": 850.0,
+      "width": 573.0,
+      "height": 216.0,
+      "imageUrl": "../data/questions/images/e7af1c5d-dce8-47a4-af23-138a3afd5967.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 132.0,
+      "y": 1399.0,
+      "width": 569.0,
+      "height": 378.0,
+      "imageUrl": "../data/questions/images/e7af1c5d-dce8-47a4-af23-138a3afd5967.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 789.0,
+      "y": 168.0,
+      "width": 572.0,
+      "height": 753.0,
+      "imageUrl": "../data/questions/images/e7af1c5d-dce8-47a4-af23-138a3afd5967.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 792.0,
+      "y": 1054.0,
+      "width": 569.0,
+      "height": 724.0,
+      "imageUrl": "../data/questions/images/e7af1c5d-dce8-47a4-af23-138a3afd5967.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 172.0,
+      "y": 165.0,
+      "width": 562.0,
+      "height": 207.0,
+      "imageUrl": "../data/questions/images/701d9996-4351-4ea8-a9ce-313c13944668.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 133.0,
+      "y": 1136.0,
+      "width": 570.0,
+      "height": 628.0,
+      "imageUrl": "../data/questions/images/30a7e956-cf3e-4989-ae6d-76a712263b33.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 789.0,
+      "y": 1258.0,
+      "width": 573.0,
+      "height": 533.0,
+      "imageUrl": "../data/questions/images/30a7e956-cf3e-4989-ae6d-76a712263b33.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 129.0,
+      "y": 850.0,
+      "width": 573.0,
+      "height": 216.0,
+      "imageUrl": "../data/questions/images/5bada1ef-e80b-4936-a396-8c4e05bef618.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 132.0,
+      "y": 1399.0,
+      "width": 569.0,
+      "height": 378.0,
+      "imageUrl": "../data/questions/images/5bada1ef-e80b-4936-a396-8c4e05bef618.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 792.0,
+      "y": 1054.0,
+      "width": 569.0,
+      "height": 724.0,
+      "imageUrl": "../data/questions/images/5bada1ef-e80b-4936-a396-8c4e05bef618.jpg"
+    }
   }
 ]
