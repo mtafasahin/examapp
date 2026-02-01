@@ -56671,5 +56671,32 @@
       "height": 480.0,
       "imageUrl": "../data/questions/images/6d35e453-d680-4e22-9dbd-1319e3133650.jpg"
     }
+  },
+  {
+    "question": {
+      "x": 207.0,
+      "y": 469.0,
+      "width": 486.0,
+      "height": 306.0,
+      "imageUrl": "../data/questions/images/9d33d43e-3d0a-4bda-8e4b-816f1d198b30.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 783.0,
+      "y": 465.0,
+      "width": 489.0,
+      "height": 434.0,
+      "imageUrl": "../data/questions/images/3404355f-a494-4d93-abcd-43f640fe8c4d.jpg"
+    }
+  },
+  {
+    "question": {
+      "x": 204.90625,
+      "y": 883.3333435058594,
+      "width": 490.0,
+      "height": 220.0,
+      "imageUrl": "../data/questions/images/50c1bc34-837b-4493-b807-501ec9865532.jpg"
+    }
   }
 ]
