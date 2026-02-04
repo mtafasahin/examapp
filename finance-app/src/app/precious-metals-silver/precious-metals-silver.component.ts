@@ -3,11 +3,11 @@ import { AssetPortfolioComponent } from '../asset-portfolio/asset-portfolio.comp
 import { AssetType } from '../models/asset.model';
 
 @Component({
-  selector: 'app-precious-metals',
+  selector: 'app-precious-metals-silver',
   imports: [AssetPortfolioComponent],
-  templateUrl: './precious-metals.component.html',
-  styleUrl: './precious-metals.component.scss',
+  templateUrl: './precious-metals-silver.component.html',
+  styleUrl: './precious-metals-silver.component.scss',
 })
-export class PreciousMetalsComponent {
+export class PreciousMetalsSilverComponent {
   AssetType = AssetType;
 }
