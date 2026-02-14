@@ -255,9 +255,9 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/router@^19.1.0":
+"@angular/router@19.1.4":
   version "19.1.4"
-  resolved "https://registry.npmjs.org/@angular/router/-/router-19.1.4.tgz"
+  resolved "https://registry.yarnpkg.com/@angular/router/-/router-19.1.4.tgz#fa62d408a7e1cc8b888ba6a44b85384ce97e4347"
   integrity sha512-0gEhGGqcCS7adKuv/XeQjRbhEqRXPhIH4ygjwfonV+uvmK+C1sf+bnAt4o01hxwf12w4FcnNPkgBKt+rJJ+LpA==
   dependencies:
     tslib "^2.3.0"
