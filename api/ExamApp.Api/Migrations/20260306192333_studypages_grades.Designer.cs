@@ -3,6 +3,7 @@ using System;
 using ExamApp.Api.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ExamApp.Api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260306192333_studypages_grades")]
+    partial class studypages_grades
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1644,56 +1647,6 @@ namespace ExamApp.Api.Migrations
                     b.ToTable("UserProgramSchedules");
                 });
 
-            modelBuilder.Entity("ExamApp.Api.Data.UserProgramStudyPageSchedule", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("CreateTime")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<int?>("CreateUserId")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime?>("DeleteTime")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<int?>("DeleteUserId")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime>("EndDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("boolean");
-
-                    b.Property<DateTime>("StartDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<int>("StudyPageId")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime?>("UpdateTime")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<int?>("UpdateUserId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("UserProgramId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("StudyPageId");
-
-                    b.HasIndex("UserProgramId");
-
-                    b.ToTable("UserProgramStudyPageSchedules");
-                });
-
             modelBuilder.Entity("ExamApp.Api.Data.WorksheetAssignment", b =>
                 {
                     b.Property<int>("Id")
@@ -2620,25 +2573,6 @@ namespace ExamApp.Api.Migrations
                     b.Navigation("UserProgram");
                 });
 
-            modelBuilder.Entity("ExamApp.Api.Data.UserProgramStudyPageSchedule", b =>
-                {
-                    b.HasOne("ExamApp.Api.Data.StudyPage", "StudyPage")
-                        .WithMany()
-                        .HasForeignKey("StudyPageId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("ExamApp.Api.Data.UserProgram", "UserProgram")
-                        .WithMany("StudyPageSchedules")
-                        .HasForeignKey("UserProgramId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("StudyPage");
-
-                    b.Navigation("UserProgram");
-                });
-
             modelBuilder.Entity("ExamApp.Api.Data.WorksheetAssignment", b =>
                 {
                     b.HasOne("Grade", "Grade")
@@ -2914,8 +2848,6 @@ namespace ExamApp.Api.Migrations
             modelBuilder.Entity("ExamApp.Api.Data.UserProgram", b =>
                 {
                     b.Navigation("Schedules");
-
-                    b.Navigation("StudyPageSchedules");
                 });
 
             modelBuilder.Entity("Grade", b =>
